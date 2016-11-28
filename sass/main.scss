@@ -5,11 +5,13 @@
 
 
 @import 'base/reset';
-@import 'base/bootstrap-grid';
+@import 'base/grid';
 
+@import 'global/layout';
 @import 'global/typography';
 @import 'global/sprites';
 @import 'global/icons';
+@import 'global/utils';
 
 @import 'components/buttons';
 @import 'components/forms';
@@ -27,11 +29,6 @@ html {
   @include respond-to(lg) {
     font-size: 18px;
   }
-}
-
-
-body {
-  background: blue;
 }
 
 

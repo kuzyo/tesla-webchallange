@@ -1,0 +1,22 @@
+.btn {
+  display: inline-block;
+  font-weight: normal;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 2px solid transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+  @include button-variant($electric-violet, $white, transparent, $electric-violet, $electric-violet);
+}
+
+.btn-secondary {
+  @include button-variant($white, $electric-violet, transparent, $white, $white);
+}

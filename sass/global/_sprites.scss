@@ -1,0 +1,239 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$icon-arrow-l-name: 'icon-arrow-l';
+$icon-arrow-l-x: 148px;
+$icon-arrow-l-y: 0px;
+$icon-arrow-l-offset-x: -148px;
+$icon-arrow-l-offset-y: 0px;
+$icon-arrow-l-width: 71px;
+$icon-arrow-l-height: 42px;
+$icon-arrow-l-total-width: 219px;
+$icon-arrow-l-total-height: 179px;
+$icon-arrow-l-image: '../images/sprite.png';
+$icon-arrow-l: (148px, 0px, -148px, 0px, 71px, 42px, 219px, 179px, '../images/sprite.png', 'icon-arrow-l', );
+$icon-arrow-r-name: 'icon-arrow-r';
+$icon-arrow-r-x: 148px;
+$icon-arrow-r-y: 44px;
+$icon-arrow-r-offset-x: -148px;
+$icon-arrow-r-offset-y: -44px;
+$icon-arrow-r-width: 71px;
+$icon-arrow-r-height: 42px;
+$icon-arrow-r-total-width: 219px;
+$icon-arrow-r-total-height: 179px;
+$icon-arrow-r-image: '../images/sprite.png';
+$icon-arrow-r: (148px, 44px, -148px, -44px, 71px, 42px, 219px, 179px, '../images/sprite.png', 'icon-arrow-r', );
+$icon-cake-name: 'icon-cake';
+$icon-cake-x: 85px;
+$icon-cake-y: 0px;
+$icon-cake-offset-x: -85px;
+$icon-cake-offset-y: 0px;
+$icon-cake-width: 61px;
+$icon-cake-height: 58px;
+$icon-cake-total-width: 219px;
+$icon-cake-total-height: 179px;
+$icon-cake-image: '../images/sprite.png';
+$icon-cake: (85px, 0px, -85px, 0px, 61px, 58px, 219px, 179px, '../images/sprite.png', 'icon-cake', );
+$icon-chemistry-name: 'icon-chemistry';
+$icon-chemistry-x: 0px;
+$icon-chemistry-y: 57px;
+$icon-chemistry-offset-x: 0px;
+$icon-chemistry-offset-y: -57px;
+$icon-chemistry-width: 59px;
+$icon-chemistry-height: 69px;
+$icon-chemistry-total-width: 219px;
+$icon-chemistry-total-height: 179px;
+$icon-chemistry-image: '../images/sprite.png';
+$icon-chemistry: (0px, 57px, 0px, -57px, 59px, 69px, 219px, 179px, '../images/sprite.png', 'icon-chemistry', );
+$icon-coffee-name: 'icon-coffee';
+$icon-coffee-x: 57px;
+$icon-coffee-y: 128px;
+$icon-coffee-offset-x: -57px;
+$icon-coffee-offset-y: -128px;
+$icon-coffee-width: 49px;
+$icon-coffee-height: 51px;
+$icon-coffee-total-width: 219px;
+$icon-coffee-total-height: 179px;
+$icon-coffee-image: '../images/sprite.png';
+$icon-coffee: (57px, 128px, -57px, -128px, 49px, 51px, 219px, 179px, '../images/sprite.png', 'icon-coffee', );
+$icon-education-name: 'icon-education';
+$icon-education-x: 0px;
+$icon-education-y: 128px;
+$icon-education-offset-x: 0px;
+$icon-education-offset-y: -128px;
+$icon-education-width: 55px;
+$icon-education-height: 51px;
+$icon-education-total-width: 219px;
+$icon-education-total-height: 179px;
+$icon-education-image: '../images/sprite.png';
+$icon-education: (0px, 128px, 0px, -128px, 55px, 51px, 219px, 179px, '../images/sprite.png', 'icon-education', );
+$icon-facebook-name: 'icon-facebook';
+$icon-facebook-x: 200px;
+$icon-facebook-y: 88px;
+$icon-facebook-offset-x: -200px;
+$icon-facebook-offset-y: -88px;
+$icon-facebook-width: 10px;
+$icon-facebook-height: 22px;
+$icon-facebook-total-width: 219px;
+$icon-facebook-total-height: 179px;
+$icon-facebook-image: '../images/sprite.png';
+$icon-facebook: (200px, 88px, -200px, -88px, 10px, 22px, 219px, 179px, '../images/sprite.png', 'icon-facebook', );
+$icon-horn-name: 'icon-horn';
+$icon-horn-x: 148px;
+$icon-horn-y: 88px;
+$icon-horn-offset-x: -148px;
+$icon-horn-offset-y: -88px;
+$icon-horn-width: 50px;
+$icon-horn-height: 34px;
+$icon-horn-total-width: 219px;
+$icon-horn-total-height: 179px;
+$icon-horn-image: '../images/sprite.png';
+$icon-horn: (148px, 88px, -148px, -88px, 50px, 34px, 219px, 179px, '../images/sprite.png', 'icon-horn', );
+$icon-letter-name: 'icon-letter';
+$icon-letter-x: 61px;
+$icon-letter-y: 73px;
+$icon-letter-offset-x: -61px;
+$icon-letter-offset-y: -73px;
+$icon-letter-width: 13px;
+$icon-letter-height: 12px;
+$icon-letter-total-width: 219px;
+$icon-letter-total-height: 179px;
+$icon-letter-image: '../images/sprite.png';
+$icon-letter: (61px, 73px, -61px, -73px, 13px, 12px, 219px, 179px, '../images/sprite.png', 'icon-letter', );
+$icon-search-name: 'icon-search';
+$icon-search-x: 61px;
+$icon-search-y: 57px;
+$icon-search-offset-x: -61px;
+$icon-search-offset-y: -57px;
+$icon-search-width: 15px;
+$icon-search-height: 14px;
+$icon-search-total-width: 219px;
+$icon-search-total-height: 179px;
+$icon-search-image: '../images/sprite.png';
+$icon-search: (61px, 57px, -61px, -57px, 15px, 14px, 219px, 179px, '../images/sprite.png', 'icon-search', );
+$icon-shop-name: 'icon-shop';
+$icon-shop-x: 108px;
+$icon-shop-y: 128px;
+$icon-shop-offset-x: -108px;
+$icon-shop-offset-y: -128px;
+$icon-shop-width: 40px;
+$icon-shop-height: 39px;
+$icon-shop-total-width: 219px;
+$icon-shop-total-height: 179px;
+$icon-shop-image: '../images/sprite.png';
+$icon-shop: (108px, 128px, -108px, -128px, 40px, 39px, 219px, 179px, '../images/sprite.png', 'icon-shop', );
+$icon-tickets-name: 'icon-tickets';
+$icon-tickets-x: 85px;
+$icon-tickets-y: 60px;
+$icon-tickets-offset-x: -85px;
+$icon-tickets-offset-y: -60px;
+$icon-tickets-width: 59px;
+$icon-tickets-height: 58px;
+$icon-tickets-total-width: 219px;
+$icon-tickets-total-height: 179px;
+$icon-tickets-image: '../images/sprite.png';
+$icon-tickets: (85px, 60px, -85px, -60px, 59px, 58px, 219px, 179px, '../images/sprite.png', 'icon-tickets', );
+$icon-tour-name: 'icon-tour';
+$icon-tour-x: 0px;
+$icon-tour-y: 0px;
+$icon-tour-offset-x: 0px;
+$icon-tour-offset-y: 0px;
+$icon-tour-width: 83px;
+$icon-tour-height: 55px;
+$icon-tour-total-width: 219px;
+$icon-tour-total-height: 179px;
+$icon-tour-image: '../images/sprite.png';
+$icon-tour: (0px, 0px, 0px, 0px, 83px, 55px, 219px, 179px, '../images/sprite.png', 'icon-tour', );
+$icon-twitter-name: 'icon-twitter';
+$icon-twitter-x: 150px;
+$icon-twitter-y: 128px;
+$icon-twitter-offset-x: -150px;
+$icon-twitter-offset-y: -128px;
+$icon-twitter-width: 25px;
+$icon-twitter-height: 21px;
+$icon-twitter-total-width: 219px;
+$icon-twitter-total-height: 179px;
+$icon-twitter-image: '../images/sprite.png';
+$icon-twitter: (150px, 128px, -150px, -128px, 25px, 21px, 219px, 179px, '../images/sprite.png', 'icon-twitter', );
+$spritesheet-width: 219px;
+$spritesheet-height: 179px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($icon-arrow-l, $icon-arrow-r, $icon-cake, $icon-chemistry, $icon-coffee, $icon-education, $icon-facebook, $icon-horn, $icon-letter, $icon-search, $icon-shop, $icon-tickets, $icon-tour, $icon-twitter, );
+$spritesheet: (219px, 179px, '../images/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

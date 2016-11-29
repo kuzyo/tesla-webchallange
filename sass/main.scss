@@ -7,29 +7,17 @@
 @import 'base/reset';
 @import 'base/grid';
 
-@import 'global/layout';
 @import 'global/typography';
+@import 'global/global';
+@import 'global/layout';
 @import 'global/sprites';
 @import 'global/icons';
 @import 'global/utils';
 
 @import 'components/buttons';
 @import 'components/forms';
+@import 'components/header';
 @import 'components/desk';
 
-html {
-  box-sizing: border-box;
-  font-family: $font-primary;
-  height: 100%;
-  font-size: 14px;
-
-  @include respond-to(md) {
-    font-size: 16px;
-  }
-
-  @include respond-to(lg) {
-    font-size: 18px;
-  }
-}
 
 

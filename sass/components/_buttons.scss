@@ -7,10 +7,14 @@
   vertical-align: middle;
   cursor: pointer;
   user-select: none;
-  border: 2px solid transparent;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
+  border: 3px solid transparent;
+  padding: 14px 30px;
+  font-size: 14px;
   transition: all 0.2s ease-in-out;
+
+  @include respond-to(xlg) {
+    padding: 14px 45px;
+  }
 }
 
 .btn-primary {

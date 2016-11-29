@@ -1,0 +1,209 @@
+.header {
+
+  &__container {
+    @include respond-to(xlg) {
+      width: 1300px;
+      max-width: 100%;
+    }
+  }
+
+  &__main {
+    @extend %clearfix;
+  }
+
+  &__option-holder {
+    @extend %clearfix;
+    display: none;
+
+    @include respond-to(lg) {
+      display: block;
+    }
+  }
+
+  &__options {
+    float: right;
+  }
+
+  &__navbar {
+    @include respond-to(md) {
+      padding-top: $space-small;
+      float: right;
+    }
+
+    @include respond-to(xlg) {
+      padding-top: $space-large;
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 65px;
+
+    @include respond-to(md) {
+      width: 75px;
+    }
+
+    @include respond-to(xlg) {
+      width: auto;
+    }
+  }
+
+  &__logo-text {
+    display: inline-block;
+    vertical-align: middle;
+    color: #040404;
+    font-size: 18px;
+    font-weight: 700;
+    margin: -$space-mini 0 0 $space-medium;
+
+    @include respond-to(sm) {
+      font-size: 20px;
+      margin: -$space-small 0 0 $space-medium;
+    }
+
+    @include respond-to(xlg) {
+      font-size: 23px;
+      margin: -$space-medium 0 0 $space-medium;
+    }
+
+    small {
+      display: block;
+      font-size: 11px;
+      font-weight: 400;
+    }
+  }
+
+  &__mobile-toggle {
+    float: right;
+    padding: $space-large $space-small;
+
+    @include respond-to(md) {
+      display: none;
+    }
+  }
+
+
+  &__navigation {
+
+    @include respond-to(lg) {
+      float: left;
+    }
+  }
+
+  &__btn {
+    display: none;
+    float: left;
+
+    @include respond-to(lg) {
+      display: block;
+    }
+
+    @include respond-to(xlg) {
+      margin-left: 2.125rem;
+    }
+  }
+}
+
+.navigation {
+  @extend %clearfix;
+  background-color: #fff;
+
+  @include respond-to(lg) {
+    padding: 0 $space-medium;
+  }
+
+  &__item {
+
+    @include respond-to(md) {
+      float: left;
+    }
+
+    &--has-children {
+      position: relative;
+
+      &:hover .submenu {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 0 12px;
+    font-family: $font-specific;
+    font-size: 12px;
+    color: #000;
+    line-height: 40px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+
+    @include respond-to(md) {
+      line-height: 52px;
+    }
+
+    @include respond-to(xlg) {
+      font-size: 14px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $electric-violet;
+    }
+  }
+}
+
+.submenu {
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+
+  @include respond-to(md) {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 52px;
+    left: -5px;
+    min-width: 184px;
+    padding: $space-small 0 $space-large;
+    z-index: 100;
+  }
+
+  &__link {
+    display: block;
+    padding: 0 $space-huge;
+    line-height: 40px;
+    font-size: 12px;
+    font-family: $font-specific;
+    text-transform: uppercase;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+
+    @include respond-to(md) {
+      padding: 0 $space-large;
+    }
+
+    @include respond-to(xlg) {
+      font-size: 14px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $electric-violet;
+    }
+  }
+}
+
+.toggle {
+  cursor: pointer;
+  background-color: transparent;
+
+  &__line {
+    width: 30px;
+    height: 5px;
+    background: #000;
+    margin-bottom: 2px;
+    border-radius: 6px;
+  }
+}
+

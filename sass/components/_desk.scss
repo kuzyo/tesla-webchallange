@@ -1,0 +1,17 @@
+.desk {
+  &__row {
+    @extend %clearfix;
+  }
+
+  &__item-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__item-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+}

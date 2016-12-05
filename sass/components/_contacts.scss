@@ -1,0 +1,29 @@
+.contact {
+  color: $white;
+  text-align: center;
+  font-size: 1.176rem;
+  padding: 4.118rem $space-large 4.706rem;
+
+  &__title {
+    line-height: 2.235rem;
+    margin-bottom: $space-small;
+  }
+
+  &__address {
+    line-height: 2.235rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 3.235rem;
+  }
+
+  &__schedule {
+    line-height: 1.841rem;
+    text-transform: uppercase;
+    margin-bottom: 3.235rem;
+  }
+
+  &__phone-list {
+    line-height: 1.706rem;
+    margin-bottom: $space-huge;
+  }
+}

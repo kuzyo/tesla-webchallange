@@ -1,15 +1,22 @@
 .header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
 
   &__container {
     @include respond-to(xlg) {
-      width: 1300px;
+      width: 1290px;
       max-width: 100%;
+      padding: 0 $space-medium 0 $space-mini;
     }
   }
 
   &__main {
     @extend %clearfix;
   }
+
 
   &__option-holder {
     @extend %clearfix;
@@ -20,8 +27,19 @@
     }
   }
 
+  &__form {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__lang-selector {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
   &__options {
     float: right;
+    padding-top: $space-mini;
   }
 
   &__navbar {
@@ -35,44 +53,6 @@
     }
   }
 
-  &__logo {
-    display: inline-block;
-    vertical-align: middle;
-    width: 65px;
-
-    @include respond-to(md) {
-      width: 75px;
-    }
-
-    @include respond-to(xlg) {
-      width: auto;
-    }
-  }
-
-  &__logo-text {
-    display: inline-block;
-    vertical-align: middle;
-    color: #040404;
-    font-size: 18px;
-    font-weight: 700;
-    margin: -$space-mini 0 0 $space-medium;
-
-    @include respond-to(sm) {
-      font-size: 20px;
-      margin: -$space-small 0 0 $space-medium;
-    }
-
-    @include respond-to(xlg) {
-      font-size: 23px;
-      margin: -$space-medium 0 0 $space-medium;
-    }
-
-    small {
-      display: block;
-      font-size: 11px;
-      font-weight: 400;
-    }
-  }
 
   &__mobile-toggle {
     float: right;

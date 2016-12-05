@@ -1,0 +1,75 @@
+
+.logo {
+
+  &__img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__text {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 700;
+
+    small {
+      display: block;
+      font-size: 11px;
+      font-weight: 400;
+    }
+  }
+
+  &--header {
+    .logo__img {
+      width: 65px;
+
+      @include respond-to(md) {
+        width: 75px;
+      }
+
+      @include respond-to(xlg) {
+        width: auto;
+      }
+
+    }
+
+    .logo__text {
+      color: #040404;
+      font-size: 18px;
+      margin: -$space-mini 0 0 $space-medium;
+
+      @include respond-to(sm) {
+        font-size: 20px;
+        margin: -$space-small 0 0 $space-medium;
+      }
+
+      @include respond-to(xlg) {
+        font-size: 23px;
+        margin: -$space-medium 0 0 $space-medium;
+      }
+    }
+  }
+
+  &--footer {
+    .logo__img {
+      width: 65px;
+
+      @include respond-to(md) {
+        width: 70px;
+      }
+
+      @include respond-to(xlg) {
+        width: 82px;
+      }
+    }
+
+    .logo__text {
+      color: $white;
+      font-size: 17px;
+      margin: -$space-mini 0 0 25px;
+
+      small {
+        font-size: 13px;
+      }
+    }
+  }
+}

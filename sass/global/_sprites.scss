@@ -121,6 +121,17 @@ $icon-search-total-width: 219px;
 $icon-search-total-height: 179px;
 $icon-search-image: '../images/sprite.png';
 $icon-search: (61px, 57px, -61px, -57px, 15px, 14px, 219px, 179px, '../images/sprite.png', 'icon-search', );
+$icon-select-name: 'icon-select';
+$icon-select-x: 200px;
+$icon-select-y: 112px;
+$icon-select-offset-x: -200px;
+$icon-select-offset-y: -112px;
+$icon-select-width: 11px;
+$icon-select-height: 6px;
+$icon-select-total-width: 219px;
+$icon-select-total-height: 179px;
+$icon-select-image: '../images/sprite.png';
+$icon-select: (200px, 112px, -200px, -112px, 11px, 6px, 219px, 179px, '../images/sprite.png', 'icon-select', );
 $icon-shop-name: 'icon-shop';
 $icon-shop-x: 108px;
 $icon-shop-y: 128px;
@@ -168,7 +179,7 @@ $icon-twitter: (150px, 128px, -150px, -128px, 25px, 21px, 219px, 179px, '../imag
 $spritesheet-width: 219px;
 $spritesheet-height: 179px;
 $spritesheet-image: '../images/sprite.png';
-$spritesheet-sprites: ($icon-arrow-l, $icon-arrow-r, $icon-cake, $icon-chemistry, $icon-coffee, $icon-education, $icon-facebook, $icon-horn, $icon-letter, $icon-search, $icon-shop, $icon-tickets, $icon-tour, $icon-twitter, );
+$spritesheet-sprites: ($icon-arrow-l, $icon-arrow-r, $icon-cake, $icon-chemistry, $icon-coffee, $icon-education, $icon-facebook, $icon-horn, $icon-letter, $icon-search, $icon-select, $icon-shop, $icon-tickets, $icon-tour, $icon-twitter, );
 $spritesheet: (219px, 179px, '../images/sprite.png', $spritesheet-sprites, );
 
 /*

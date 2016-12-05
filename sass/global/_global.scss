@@ -9,10 +9,14 @@ html {
   }
 
   @include respond-to(lg) {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 
 img {
   max-width: 100%;
+}
+
+i[class^="icon-"] {
+  display: inline-block;
 }

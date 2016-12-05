@@ -1,23 +1,31 @@
+@import 'base/reset';
+@import 'base/fonts';
+
 @import 'abstracts/mixins';
 @import 'abstracts/variables/breakpoints';
 @import 'abstracts/variables/colors';
 @import 'abstracts/variables/sizes';
+@import 'abstracts/variables/typography';
 
-
-@import 'base/reset';
-@import 'base/grid';
-
-@import 'global/typography';
 @import 'global/global';
 @import 'global/layout';
 @import 'global/sprites';
 @import 'global/icons';
 @import 'global/utils';
 
+@import 'vendor/slick';
+@import 'vendor/slick-theme';
+
+@import 'components/logos';
 @import 'components/buttons';
 @import 'components/forms';
 @import 'components/header';
-@import 'components/desk';
+@import 'components/footer';
+@import 'components/desks';
+@import 'components/carousels';
+@import 'components/contacts';
+
+
 
 
 

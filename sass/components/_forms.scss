@@ -1,3 +1,29 @@
+.form-control-holder {
+  position: relative;
+
+  &--letter {
+    .icon-letter {
+      top: 0;
+      right: $space-mini;
+    }
+  }
+
+  &--search {
+    .icon-search {
+      top: 3px;
+      z-index: -1;
+    }
+
+    input:focus + .icon-search {
+      left: -30px;
+    }
+  }
+}
+
+.form-control-icon {
+  position: absolute;
+}
+
 .form-control {
   display: block;
   width: 100%;
@@ -19,7 +45,6 @@
 .form-control:focus {
   color: #464a4c;
   background-color: #fff;
-  border-color: #66afe9;
   outline: none;
 }
 
@@ -41,4 +66,182 @@
 .form-control::placeholder {
   color: #999;
   opacity: 1;
+}
+
+.form-control--minimal {
+  border: 0;
+  border-bottom: 1px solid #afafaf;
+  padding: 0 $space-medium;
+  font-size: 13px;
+}
+
+.form-control-holder--animated {
+  label          {
+    font-size: 13px;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top: -10px;
+    transition:0.2s ease all;
+  }
+
+  input:focus ~ label, input:valid ~ label    {
+    top: -20px;
+    color: #fff;
+  }
+
+  .bar  {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  .bar:before,
+  .bar:after   {
+    content:'';
+    height:2px;
+    width:0;
+    bottom:1px;
+    position:absolute;
+    background:#fff;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+
+  }
+
+  .bar:before {
+    left:50%;
+  }
+
+  .bar:after {
+    right:50%;
+  }
+
+  input:focus ~ .bar:before,
+  input:focus ~ .bar:after {
+    width:50%;
+
+  }
+
+  .highlight {
+    position:absolute;
+    height:60%;
+    width:100px;
+    top:25%;
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+
+  input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  }
+}
+
+.form-control--footer {
+  background-color: $amethyst;
+
+  &:focus {
+    background-color: $amethyst;
+  }
+}
+
+.form-control--footer::-webkit-input-placeholder {
+  color: $white;
+}
+
+.form-control--footer::-moz-placeholder {
+  color: $white;
+}
+
+.form-control--footer:-ms-input-placeholder {
+  color: $white;
+}
+
+.form-control--footer::placeholder {
+  color: $white;
+}
+
+.select-dropdown {
+  position: relative;
+  width: auto;
+  float: left;
+  max-width: 100%;
+
+  select {
+    font-size: 15px;
+    color: #424242;
+    max-width: 100%;
+    padding: $space-mini 30px $space-mini $space-small;
+    border: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    &:active,
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .icon-select {
+    position: absolute;
+    right: $space-medium;
+    top: $space-small;
+  }
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+input[type=search] {
+  background-color: transparent;
+  width: 35px;
+  padding: $space-micro 0;
+  transition: all .3s;
+  border: 0;
+  font-family: $font-secondary;
+  color: #919191;
+}
+
+input[type=search]:focus {
+  width: 195px;
+  border-bottom: 1px solid #000;
+  padding-left: $space-medium;
+  background-color: transparent;
+}
+
+input[type=search]:-moz-placeholder {
+  color: transparent;
+}
+
+input[type=search]::-webkit-input-placeholder {
+  color: transparent;
+}
+
+@-webkit-keyframes inputHighlighter {
+  from { background: $amethyst;  }
+  to  { width:0; background:transparent;  }
+
+}
+@-moz-keyframes inputHighlighter {
+  from { background: $amethyst;  }
+  to  { width:0; background:transparent;  }
+
+}
+@keyframes inputHighlighter {
+  from { background: $amethyst;  }
+  to  { width:0; background:transparent;  }
+
 }

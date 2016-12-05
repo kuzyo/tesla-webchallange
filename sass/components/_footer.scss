@@ -1,0 +1,92 @@
+.footer {
+  background-color: $amethyst;
+  color: $white;
+  padding: 4.706rem 0 $space-huge;
+
+  &__container {
+    @include respond-to(xlg) {
+      width: 1240px;
+      max-width: 100%;
+    }
+  }
+
+  &__row {
+    padding-left: -15px;
+    padding-right: -15px;
+  }
+
+  &__menus {
+    float: left;
+    width: 100%;
+
+    @include respond-to(md) {
+      width: 66.666667%;
+    }
+  }
+
+  &__info {
+    float: left;
+    width: 100%;
+
+    @include respond-to(md) {
+      width: 33.33333%;
+    }
+  }
+
+  &__col {
+    float: left;
+    padding: 0 15px;
+    width: 100%;
+
+    @include respond-to(md) {
+      width: 25%;
+    }
+  }
+
+  &__title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-family: $font-secondary;
+  }
+
+  &__menus {
+    @include respond-to(xlg) {
+      padding-top: 1.1rem;
+      padding-left: 5.176rem;
+    }
+  }
+
+  &__menu {
+    margin-bottom: $space-huge;
+  }
+
+  &__form,
+  &__media {
+    margin-top: 3.765rem;
+  }
+
+  &__form-email-field {
+    max-width: 228px;
+  }
+}
+
+.menu {
+  &__link {
+    color: $white;
+    font-family: $font-secondary;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+}
+
+.media {
+  &__icon {
+    display: inline-block;
+    &:last-child {
+      margin-left: 30px;
+    }
+  }
+}

@@ -8,13 +8,19 @@
   cursor: pointer;
   user-select: none;
   border: 3px solid transparent;
-  padding: 14px 30px;
-  font-size: 14px;
+  padding: 0.823rem 1.765rem;
+  font-size: 0.8235rem;
+  text-transform: uppercase;
+  font-weight: 700;
   transition: all 0.2s ease-in-out;
 
   @include respond-to(xlg) {
-    padding: 14px 45px;
+    padding: 0.823rem 2.647rem;
   }
+}
+
+.btn-sm {
+  padding: 0.823rem 1.674rem;
 }
 
 .btn-primary {
@@ -23,4 +29,13 @@
 
 .btn-secondary {
   @include button-variant($white, $electric-violet, transparent, $white, $white);
+}
+
+.btn-specific {
+  @include button-variant(#000, $white, transparent, $electric-violet, $electric-violet);
+  font-family: $font-specific;
+}
+
+.btn-highlighted {
+  @include button-variant($white, $white, $electric-violet, darken($electric-violet, 5%), $electric-violet);
 }

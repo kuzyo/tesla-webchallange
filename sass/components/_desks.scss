@@ -1,0 +1,130 @@
+.desk {
+  position: relative;
+
+  &__row {
+    @extend %clearfix;
+  }
+
+  &__item {
+    color: $white;
+    padding: 0 3.824rem;
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-bottom: $space-large;
+
+    @include respond-to(md) {
+      width: 50%;
+      margin-bottom: 0;
+    }
+
+    &_img {
+      background-size: cover;
+
+      &--party {
+        background-image: url('../images/party-bg.png');
+      }
+
+      &--science-party {
+        background-image: url('../images/science-party-bg.png');
+      }
+
+      &--coffee {
+        background-image: url('../images/coffee-bg.png');
+      }
+
+      &--shop {
+        background-image: url('../images/shop-bg.png');
+      }
+
+      &--education {
+        background-image: url('../images/education-bg.png');
+      }
+
+      &--map {
+        background-image: url('../images/map-bg.png');
+      }
+    }
+
+    &--carousel {
+      float: right;
+    }
+  }
+
+  &__item-in {
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__item-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  &__icon {
+    margin-bottom: $space-large;
+    margin-top: -$space-small;
+  }
+
+  &__title {
+    font-size: 1.294rem;
+    line-height: 2.353rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: $space-large;
+
+    small {
+      display: block;
+      font-size: 1rem;
+    }
+  }
+
+  &__txt {
+    line-height: 1.294rem;
+  }
+
+  &--offers {
+
+    .desk__item {
+      height: 20.47rem;
+    }
+  }
+
+  &--novelty {
+    box-shadow: -1.1px -31px 49px rgba($box-shadow, .2);
+
+    .desk__item {
+      height: 25.59rem;
+    }
+  }
+
+  &--advertise {
+    box-shadow: -8.2px 26.8px 49px rgba($box-shadow, .2);
+
+    &-offers {
+      float: left;
+      width: 57%;
+    }
+
+    &-contact {
+      float: left;
+      width: 43%;
+    }
+
+    .desk__row--top {
+      .desk__item {
+        height: 14.82rem;
+      }
+    }
+
+    .desk__row--bottom {
+      .desk__item {
+        height: 25.29rem;
+      }
+    }
+  }
+}
+
+

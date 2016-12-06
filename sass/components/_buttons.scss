@@ -1,41 +1,72 @@
-.btn {
-  display: inline-block;
-  font-weight: normal;
-  line-height: 1.25;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  user-select: none;
-  border: 3px solid transparent;
-  padding: 0.823rem 1.765rem;
-  font-size: 0.8235rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  transition: all 0.2s ease-in-out;
+.btn
+{
+    font-size: .7647rem;
+    font-weight: normal;
+    font-weight: 700;
+    line-height: 1.25;
 
-  @include respond-to(xlg) {
-    padding: 0.823rem 2.647rem;
-  }
+    display: inline-block;
+
+    padding: .9375rem 1.765rem;
+
+    cursor: pointer;
+    user-select: none;
+    transition: all .2s ease-in-out;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-transform: uppercase;
+
+    border: 3px solid transparent;
+
+    @include respond-to(xlg)
+    {
+        padding: .823rem 2.467rem;
+    }
 }
 
-.btn-sm {
-  padding: 0.823rem 1.674rem;
+.btn-sm
+{
+    padding: .823rem 1.294rem;
 }
 
-.btn-primary {
-  @include button-variant($electric-violet, $white, transparent, $electric-violet, $electric-violet);
+.btn-lg
+{
+    font-size: 1rem;
+
+    padding: 1.176rem 2.467rem;
 }
 
-.btn-secondary {
-  @include button-variant($white, $electric-violet, transparent, $white, $white);
+.btn-xlg
+{
+    font-size: 1rem;
+
+    padding: 1.176rem 1.765rem;
+
+    @include respond-to(xlg)
+    {
+        padding: 1.294rem 1.765rem;
+    }
 }
 
-.btn-specific {
-  @include button-variant(#000, $white, transparent, $electric-violet, $electric-violet);
-  font-family: $font-specific;
+.btn-primary
+{
+    @include button-variant($electric-violet, $white, transparent, $electric-violet, $electric-violet);
 }
 
-.btn-highlighted {
-  @include button-variant($white, $white, $electric-violet, darken($electric-violet, 5%), $electric-violet);
+.btn-secondary
+{
+    @include button-variant($white, $electric-violet, transparent, $white, $white);
+}
+
+.btn-specific
+{
+    font-family: $font-specific;
+
+    @include button-variant(#000, $white, transparent, $electric-violet, $electric-violet);
+}
+
+.btn-highlighted
+{
+    @include button-variant($white, $white, $electric-violet, darken($electric-violet, 5%), $electric-violet);
 }

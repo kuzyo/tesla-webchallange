@@ -1,75 +1,109 @@
 
-.logo {
+.logo
+{
+    &__img
+    {
+        display: inline-block;
 
-  &__img {
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  &__text {
-    display: inline-block;
-    vertical-align: middle;
-    font-weight: 700;
-
-    small {
-      display: block;
-      font-size: 11px;
-      font-weight: 400;
-    }
-  }
-
-  &--header {
-    .logo__img {
-      width: 65px;
-
-      @include respond-to(md) {
-        width: 75px;
-      }
-
-      @include respond-to(xlg) {
-        width: auto;
-      }
-
+        transition: 1s;
+        vertical-align: middle;
     }
 
-    .logo__text {
-      color: #040404;
-      font-size: 18px;
-      margin: -$space-mini 0 0 $space-medium;
+    &__text
+    {
+        font-weight: 700;
 
-      @include respond-to(sm) {
-        font-size: 20px;
-        margin: -$space-small 0 0 $space-medium;
-      }
+        display: inline-block;
 
-      @include respond-to(xlg) {
-        font-size: 23px;
-        margin: -$space-medium 0 0 $space-medium;
-      }
-    }
-  }
+        vertical-align: middle;
 
-  &--footer {
-    .logo__img {
-      width: 65px;
+        small
+        {
+            font-size: 11px;
+            font-weight: 400;
 
-      @include respond-to(md) {
-        width: 70px;
-      }
-
-      @include respond-to(xlg) {
-        width: 82px;
-      }
+            display: block;
+        }
     }
 
-    .logo__text {
-      color: $white;
-      font-size: 17px;
-      margin: -$space-mini 0 0 25px;
+    &--header
+    {
+        .logo__img
+        {
+            width: 3.929rem;
 
-      small {
-        font-size: 13px;
-      }
+            @include respond-to(xs)
+            {
+                width: 4.643rem;
+            }
+            @include respond-to(sm)
+            {
+                width: 4.412rem;
+            }
+            @include respond-to(xlg)
+            {
+                width: auto;
+            }
+        }
+
+        .logo__text
+        {
+            font-size: 1.286rem;
+
+            margin: -$space-mini 0 0 $space-mini;
+
+            color: #040404;
+
+            @include respond-to(xs)
+            {
+                margin: -$space-mini 0 0 $space-medium;
+            }
+            @include respond-to(sm)
+            {
+                margin: -$space-small 0 0 $space-medium;
+            }
+            @include respond-to(xlg)
+            {
+                font-size: 1.353rem;
+
+                margin: -$space-medium 0 0 $space-medium;
+            }
+        }
     }
-  }
+
+    &--footer
+    {
+        .logo__img
+        {
+            width: 4.643rem;
+
+            @include respond-to(md)
+            {
+                width: 4.375rem;
+            }
+            @include respond-to(xlg)
+            {
+                width: 4.706rem;
+            }
+        }
+
+        .logo__text
+        {
+            font-size: 1rem;
+
+            margin: -$space-mini 0 0 $space-mini;
+
+            color: $white;
+
+            @include respond-to(xs)
+            {
+                margin: -$space-mini 0 0 $space-medium;
+            }
+
+            small
+            {
+                font-size: .764rem;
+            }
+        }
+    }
 }

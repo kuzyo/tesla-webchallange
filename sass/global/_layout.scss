@@ -1,132 +1,159 @@
 html,
-body { height: 100%; }
-
-@-ms-viewport {
-  width: device-width;
+body
+{
+    height: 100%;
 }
 
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -ms-overflow-style: scrollbar;
+@-ms-viewport
+{
+    width: device-width;
+}
+
+html
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+    -ms-overflow-style: scrollbar;
 }
 
 *,
 *::before,
-*::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+*::after
+{
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-
-  @include respond-to(xs) {
-    width: 540px;
-    max-width: 100%;
-  }
-
-  @include respond-to(sm) {
-    width: 720px;
-    max-width: 100%;
-  }
-
-  @include respond-to(md) {
-    width: 960px;
-    max-width: 100%;
-  }
-
-  @include respond-to(lg) {
-    width: 1140px;
-    max-width: 100%;
-  }
-
-  @include respond-to(lg) {
-    width: 1245px;
-    max-width: 100%;
-  }
+.layout
+{
+    min-height: 100%;
 }
 
-.container::after {
-  display: block;
-  content: "";
-  clear: both;
+.layout__wrapper
+{
+    overflow: hidden;
+
+    min-height: 100vh;
+    padding-top: 5.714rem;
+
+    @include respond-to(md)
+    {
+        padding-top: 0;
+        padding-bottom: 30.29rem;
+    }
 }
 
-.content {
-  position: relative;
-
-  &__decoration {
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    background-image:  linear-gradient(45deg, $amethyst 60.5%, transparent 50%);
-    z-index: -1;
-  }
-}
-
-.content-shifted {
-  position: relative;
-
-  @include respond-to(md) {
-    top: -27.94rem;
-  }
-}
-
-.advertise-section {
-  position: relative;
-
-  @include respond-to(md) {
-    margin-top: -27.94rem;
-  }
-
-  &:after {
-    position: absolute;
-    content: '';
-    background-color: $amethyst;
-    z-index: -1;
-    left: 0;
-    bottom: 0;
-    height: 11.76rem;
-    width: 100%;
-  }
-
-  &__contacts {
-
-  }
-
-  &__offers {
-
-  }
-}
-
-.single-carousel-section {
-  &__in {
+.layout__container
+{
     position: relative;
 
-    &:before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      content: '';
-      width: 50%;
-      height: 100%;
-      background-image: url('../images/tesla-pic-3.png');
-      background-repeat: no-repeat;
-      background-position: calc(50% - 435px) 70%;
-      background-attachment: fixed;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    @include respond-to(xs)
+    {
+        width: 540px;
+        max-width: 100%;
     }
-  }
+    @include respond-to(sm)
+    {
+        width: 720px;
+        max-width: 100%;
+    }
+    @include respond-to(md)
+    {
+        width: 960px;
+        max-width: 100%;
+    }
+    @include respond-to(lg)
+    {
+        width: 1140px;
+        max-width: 100%;
+    }
+    @include respond-to(lg)
+    {
+        width: 1245px;
+        max-width: 100%;
+    }
 }
 
-.top-section {
+.layout__container::after
+{
+    display: block;
+    clear: both;
 
+    content: '';
 }
 
-.middle-section {
+.content
+{
+    position: relative;
 
+    &:before
+    {
+        position: absolute;
+        z-index: -1;
+
+        width: 50%;
+        height: 100%;
+
+        content: '';
+
+        background-image: linear-gradient(45deg, $amethyst 61.5%, transparent 50%);
+    }
 }
 
+.advertise-section
+{
+    position: relative;
+
+    &:after
+    {
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 11.76rem;
+
+        content: '';
+
+        background-color: $amethyst;
+    }
+}
+
+.single-carousel-section
+{
+    &__in
+    {
+        position: relative;
+
+        &:before
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            display: none;
+
+            width: 50%;
+            height: 100%;
+
+            content: '';
+
+            background-image: url('../images/tesla-pic.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 25% 0;
+
+            @include respond-to(md)
+            {
+                display: block;
+            }
+        }
+    }
+}

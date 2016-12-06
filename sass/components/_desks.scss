@@ -1,130 +1,264 @@
-.desk {
-  position: relative;
-
-  &__row {
-    @extend %clearfix;
-  }
-
-  &__item {
-    color: $white;
-    padding: 0 3.824rem;
+.desk
+{
     position: relative;
-    width: 100%;
-    float: left;
-    margin-bottom: $space-large;
 
-    @include respond-to(md) {
-      width: 50%;
-      margin-bottom: 0;
+    &__row
+    {
+        @extend %clearfix;
     }
 
-    &_img {
-      background-size: cover;
+    &__item
+    {
+        position: relative;
 
-      &--party {
-        background-image: url('../images/party-bg.png');
-      }
+        float: left;
 
-      &--science-party {
-        background-image: url('../images/science-party-bg.png');
-      }
+        width: 100%;
+        margin-bottom: $space-large;
+        padding: 0 $space-small;
 
-      &--coffee {
-        background-image: url('../images/coffee-bg.png');
-      }
+        color: $white;
 
-      &--shop {
-        background-image: url('../images/shop-bg.png');
-      }
+        @include respond-to(md)
+        {
+            width: 50%;
+            margin-bottom: 0;
+            padding: 0 $space-huge;
+        }
+        @include respond-to(lg)
+        {
+            padding: 0 3.824rem;
+        }
 
-      &--education {
-        background-image: url('../images/education-bg.png');
-      }
+        &_img
+        {
+            background-repeat: no-repeat;
+            background-size: cover;
 
-      &--map {
-        background-image: url('../images/map-bg.png');
-      }
+            &--party
+            {
+                background-image: url('../images/party-bg.png');
+            }
+
+            &--science-party
+            {
+                background-image: url('../images/science-party-bg.png');
+            }
+
+            &--coffee
+            {
+                background-image: url('../images/coffee-bg.png');
+            }
+
+            &--shop
+            {
+                background-image: url('../images/shop-bg.png');
+            }
+
+            &--education
+            {
+                background-image: url('../images/education-bg.png');
+            }
+
+            &--map
+            {
+                background-image: url('../images/map-bg.png');
+            }
+        }
+
+        &--carousel
+        {
+            float: right;
+
+            .slick-slider
+            {
+                height: 100%;
+            }
+
+            .slick-dots
+            {
+                bottom: $space-large;
+
+                button:before
+                {
+                    font-size: 3.125rem;
+
+                    opacity: 1;
+                    color: $white;
+                    border-radius: 50%;
+                }
+
+                .slick-active button:before
+                {
+                    color: #46196f;
+                }
+            }
+
+            .desk__item
+            {
+                padding: 0;
+            }
+
+            .desk__subtitle
+            {
+                font-size: 1.294rem;
+                line-height: 1.765rem;
+
+                margin-bottom: $space-medium;
+
+                text-decoration: underline;
+            }
+
+            .desk__txt
+            {
+                font-size: 1.059rem;
+            }
+        }
+
+
+        &--mb-none
+        {
+            margin-bottom: 0;
+        }
     }
 
-    &--carousel {
-      float: right;
-    }
-  }
+    &__item-in
+    {
+        display: table;
 
-  &__item-in {
-    display: table;
-    height: 100%;
-    width: 100%;
-  }
-
-  &__item-cell {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-  }
-
-  &__icon {
-    margin-bottom: $space-large;
-    margin-top: -$space-small;
-  }
-
-  &__title {
-    font-size: 1.294rem;
-    line-height: 2.353rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: $space-large;
-
-    small {
-      display: block;
-      font-size: 1rem;
-    }
-  }
-
-  &__txt {
-    line-height: 1.294rem;
-  }
-
-  &--offers {
-
-    .desk__item {
-      height: 20.47rem;
-    }
-  }
-
-  &--novelty {
-    box-shadow: -1.1px -31px 49px rgba($box-shadow, .2);
-
-    .desk__item {
-      height: 25.59rem;
-    }
-  }
-
-  &--advertise {
-    box-shadow: -8.2px 26.8px 49px rgba($box-shadow, .2);
-
-    &-offers {
-      float: left;
-      width: 57%;
+        width: 100%;
+        height: 100%;
     }
 
-    &-contact {
-      float: left;
-      width: 43%;
+    &__item-cell
+    {
+        display: table-cell;
+
+        text-align: center;
+        vertical-align: middle;
     }
 
-    .desk__row--top {
-      .desk__item {
-        height: 14.82rem;
-      }
+    &__icon
+    {
+        margin-top: -$space-small;
+        margin-bottom: $space-large;
     }
 
-    .desk__row--bottom {
-      .desk__item {
-        height: 25.29rem;
-      }
+    &__title
+    {
+        font-size: 1.1rem;
+        font-weight: 700;
+        line-height: 1.429rem;
+
+        margin-bottom: $space-large;
+
+        text-transform: uppercase;
+
+        @include respond-to(xs)
+        {
+            font-size: 1.294rem;
+            line-height: 2.353rem;
+        }
+
+        small
+        {
+            font-size: 1rem;
+
+            display: block;
+        }
     }
-  }
+
+
+    &__txt
+    {
+        line-height: 1.294rem;
+    }
+
+    &--offers
+    {
+        .desk__item
+        {
+            height: 20.47rem;
+        }
+
+        .desk__row--top > .desk__item
+        {
+            @include respond-to(md)
+            {
+                margin-top: -27.35rem;
+            }
+        }
+
+        .desk__row--bottom > .desk__item
+        {
+            @include respond-to(md)
+            {
+                margin-top: -6.941rem;
+            }
+        }
+    }
+
+    &--novelty
+    {
+        box-shadow: -1.1px -31px 49px rgba($box-shadow, .2);
+
+        .desk__item
+        {
+            height: 25.59rem;
+        }
+    }
+
+    &--advertise
+    {
+        box-shadow: -8.2px 26.8px 49px rgba($box-shadow, .2);
+
+        &-offers
+        {
+            position: relative;
+
+            @include respond-to(md)
+            {
+                left: 43%;
+
+                float: left;
+
+                width: 57%;
+            }
+        }
+
+        &-contact
+        {
+            position: relative;
+
+            @include respond-to(md)
+            {
+                right: 57%;
+
+                float: left;
+
+                width: 43%;
+            }
+        }
+
+        .desk__title
+        {
+            font-weight: 500;
+        }
+
+        .desk__row--top
+        {
+            .desk__item
+            {
+                height: 14.82rem;
+            }
+        }
+
+        .desk__row--bottom
+        {
+            .desk__item
+            {
+                height: 25.29rem;
+            }
+        }
+    }
 }
-
-

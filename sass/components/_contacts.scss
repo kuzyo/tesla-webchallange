@@ -1,29 +1,53 @@
-.contact {
-  color: $white;
-  text-align: center;
-  font-size: 1.176rem;
-  padding: 4.118rem $space-large 4.706rem;
+.contact
+{
+    font-size: 1.176rem;
 
-  &__title {
-    line-height: 2.235rem;
-    margin-bottom: $space-small;
-  }
+    padding: 4.118rem $space-large 4.529rem;
 
-  &__address {
-    line-height: 2.235rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 3.235rem;
-  }
+    text-align: center;
 
-  &__schedule {
-    line-height: 1.841rem;
-    text-transform: uppercase;
-    margin-bottom: 3.235rem;
-  }
+    color: $white;
 
-  &__phone-list {
-    line-height: 1.706rem;
-    margin-bottom: $space-huge;
-  }
+    &__title
+    {
+        line-height: 2.235rem;
+
+        margin-bottom: $space-small;
+    }
+
+    &__address
+    {
+        font-weight: 700;
+        line-height: 2.235rem;
+
+        margin-bottom: $space-large;
+
+        text-transform: uppercase;
+
+        @include respond-to(md)
+        {
+            margin-bottom: 3.235rem;
+        }
+    }
+
+    &__schedule
+    {
+        line-height: 1.841rem;
+
+        margin-bottom: $space-large;
+
+        text-transform: uppercase;
+
+        @include respond-to(md)
+        {
+            margin-bottom: 3.235rem;
+        }
+    }
+
+    &__phone-list
+    {
+        line-height: 1.706rem;
+
+        margin-bottom: $space-huge;
+    }
 }

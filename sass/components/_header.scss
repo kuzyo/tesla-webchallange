@@ -1,189 +1,296 @@
-.header {
-  position: fixed;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: 9999;
-
-  &__container {
-    @include respond-to(xlg) {
-      width: 1290px;
-      max-width: 100%;
-      padding: 0 $space-medium 0 $space-mini;
-    }
-  }
-
-  &__main {
-    @extend %clearfix;
-  }
-
-
-  &__option-holder {
-    @extend %clearfix;
-    display: none;
-
-    @include respond-to(lg) {
-      display: block;
-    }
-  }
-
-  &__form {
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  &__lang-selector {
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  &__options {
-    float: right;
-    padding-top: $space-mini;
-  }
-
-  &__navbar {
-    @include respond-to(md) {
-      padding-top: $space-small;
-      float: right;
-    }
-
-    @include respond-to(xlg) {
-      padding-top: $space-large;
-    }
-  }
-
-
-  &__mobile-toggle {
-    float: right;
-    padding: $space-large $space-small;
-
-    @include respond-to(md) {
-      display: none;
-    }
-  }
-
-
-  &__navigation {
-
-    @include respond-to(lg) {
-      float: left;
-    }
-  }
-
-  &__btn {
-    display: none;
-    float: left;
-
-    @include respond-to(lg) {
-      display: block;
-    }
-
-    @include respond-to(xlg) {
-      margin-left: 2.125rem;
-    }
-  }
-}
-
-.navigation {
-  @extend %clearfix;
-  background-color: #fff;
-
-  @include respond-to(lg) {
-    padding: 0 $space-medium;
-  }
-
-  &__item {
-
-    @include respond-to(md) {
-      float: left;
-    }
-
-    &--has-children {
-      position: relative;
-
-      &:hover .submenu {
-        visibility: visible;
-        opacity: 1;
-      }
-    }
-  }
-
-  &__link {
-    display: block;
-    padding: 0 12px;
-    font-family: $font-specific;
-    font-size: 12px;
-    color: #000;
-    line-height: 40px;
-    text-transform: uppercase;
-    transition: all 0.2s ease-in-out;
-
-    @include respond-to(md) {
-      line-height: 52px;
-    }
-
-    @include respond-to(xlg) {
-      font-size: 14px;
-    }
-
-    &:hover,
-    &:focus {
-      color: $electric-violet;
-    }
-  }
-}
-
-.submenu {
-  background-color: #fff;
-  transition: all 0.3s ease-in-out;
-
-  @include respond-to(md) {
-    opacity: 0;
-    visibility: hidden;
+.header
+{
     position: absolute;
-    top: 52px;
-    left: -5px;
-    min-width: 184px;
-    padding: $space-small 0 $space-large;
-    z-index: 100;
-  }
+    z-index: 9999;
+    right: 0;
+    left: 0;
 
-  &__link {
-    display: block;
-    padding: 0 $space-huge;
-    line-height: 40px;
-    font-size: 12px;
-    font-family: $font-specific;
-    text-transform: uppercase;
-    color: #000;
-    transition: all 0.2s ease-in-out;
+    width: 100%;
+    padding: $space-small 0;
 
-    @include respond-to(md) {
-      padding: 0 $space-large;
+    transition: .3s ease;
+
+    background-color: $white;
+    box-shadow: 0 0 3px rgba($black, .3);
+
+    @include respond-to(md)
+    {
+        position: fixed;
+        right: 0;
+        left: 0;
+
+        padding: 0;
+
+        background-color: transparent;
+        box-shadow: none;
     }
 
-    @include respond-to(xlg) {
-      font-size: 14px;
+    &--scrolled
+    {
+        padding: $space-mini 0;
+
+        background-color: $white;
+        box-shadow: 0 0 3px rgba($black, .3);
+
+        .header__option-holder
+        {
+            display: none;
+        }
+
+        .logo__img
+        {
+            width: 4.412rem;
+        }
+
+        .logo__text
+        {
+            font-size: 1.176rem;
+
+            margin: -$space-small 0 0 $space-medium;
+        }
+
+        .header__navbar
+        {
+            padding-top: $space-small;
+
+            @include respond-to(lg)
+            {
+                padding-top: $space-medium;
+            }
+        }
     }
 
-    &:hover,
-    &:focus {
-      color: $electric-violet;
+    &__container
+    {
+        @include respond-to(xlg)
+        {
+            width: 1290px;
+        }
     }
-  }
+
+    &__main
+    {
+        @extend %clearfix;
+    }
+
+
+    &__option-holder
+    {
+        display: none;
+
+        @extend %clearfix;
+        @include respond-to(md)
+        {
+            display: block;
+        }
+    }
+
+    &__form
+    {
+        display: inline-block;
+
+        vertical-align: middle;
+    }
+
+    &__lang-selector
+    {
+        display: inline-block;
+
+        vertical-align: middle;
+    }
+
+    &__options
+    {
+        float: right;
+
+        padding-top: $space-mini;
+    }
+
+    &__navbar
+    {
+        display: none;
+
+        @include respond-to(md)
+        {
+            display: block !important;
+            float: right;
+
+            padding-top: $space-small;
+        }
+        @include respond-to(xlg)
+        {
+            padding-top: $space-large;
+        }
+    }
+
+
+    &__mobile-toggle
+    {
+        float: right;
+
+        padding: 1.563rem $space-small;
+
+        @include respond-to(md)
+        {
+            display: none;
+        }
+    }
+
+
+    &__navigation
+    {
+        @include respond-to(lg)
+        {
+            float: left;
+        }
+    }
+
+    &__btn
+    {
+        display: none;
+        float: left;
+
+        @include respond-to(lg)
+        {
+            display: block;
+
+            margin-left: $space-large;
+        }
+        @include respond-to(xlg)
+        {
+            margin-left: 1.765rem;
+        }
+    }
 }
 
-.toggle {
-  cursor: pointer;
-  background-color: transparent;
+.navigation
+{
+    background-color: #fff;
 
-  &__line {
-    width: 30px;
-    height: 5px;
-    background: #000;
-    margin-bottom: 2px;
-    border-radius: 6px;
-  }
+    @extend %clearfix;
+    @include respond-to(lg)
+    {
+        padding: 0 $space-mini;
+    }
+
+    &__item
+    {
+        @include respond-to(md)
+        {
+            float: left;
+        }
+
+        &--has-children
+        {
+            position: relative;
+
+            &:hover .submenu
+            {
+                visibility: visible;
+
+                opacity: 1;
+            }
+        }
+    }
+
+    &__link
+    {
+        font-family: $font-specific;
+        font-size: 12px;
+        line-height: 40px;
+
+        display: block;
+
+        padding: 0 .583rem;
+
+        transition: all .2s ease-in-out;
+        text-transform: uppercase;
+
+        color: #000;
+
+        @include respond-to(md)
+        {
+            line-height: 52px;
+        }
+        @include respond-to(xlg)
+        {
+            font-size: $font-size-base;
+        }
+
+        &:hover,
+        &:focus
+        {
+            color: $electric-violet;
+        }
+    }
 }
 
+.submenu
+{
+    transition: all .3s ease-in-out;
+
+    background-color: #fff;
+
+    @include respond-to(md)
+    {
+        position: absolute;
+        z-index: 100;
+        top: 52px;
+        left: -5px;
+
+        visibility: hidden;
+
+        min-width: 184px;
+        padding: $space-small 0 $space-large;
+
+        opacity: 0;
+    }
+
+    &__link
+    {
+        font-family: $font-specific;
+        font-size: 12px;
+        line-height: 40px;
+
+        display: block;
+
+        padding: 0 $space-huge;
+
+        transition: all .2s ease-in-out;
+        text-transform: uppercase;
+
+        color: #000;
+
+        @include respond-to(md)
+        {
+            padding: 0 $space-large;
+        }
+        @include respond-to(xlg)
+        {
+            font-size: $font-size-base;
+        }
+
+        &:hover,
+        &:focus
+        {
+            color: $electric-violet;
+        }
+    }
+}
+
+.toggle
+{
+    cursor: pointer;
+
+    background-color: transparent;
+
+    &__line
+    {
+        width: 30px;
+        height: 5px;
+        margin-bottom: 2px;
+
+        border-radius: 6px;
+        background: #000;
+    }
+}

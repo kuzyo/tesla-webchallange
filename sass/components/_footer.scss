@@ -1,10 +1,14 @@
 .footer
 {
-    padding: 4.706rem 0 $space-huge;
+    padding: 2rem 0;
 
     color: $white;
     background-color: $amethyst;
 
+    @include respond-to(md)
+    {
+        padding: 4.706rem 0 $space-huge;
+    }
     @include respond-to(md)
     {
         margin-top: -31.12rem;
@@ -55,9 +59,12 @@
 
         width: 100%;
 
-        @include respond-to(md)
+        @include respond-to(sm)
         {
             width: 25%;
+        }
+        @include respond-to(md)
+        {
             padding: 0 15px;
         }
     }

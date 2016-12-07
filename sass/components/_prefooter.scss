@@ -1,0 +1,103 @@
+.prefooter
+{
+    position: relative;
+
+    padding: 1rem 0;
+
+    @include respond-to(md)
+    {
+        padding: 0;
+    }
+
+    &:before,
+    &:after
+    {
+        position: absolute;
+        z-index: -1;
+        top: 1px;
+
+        width: 100%;
+        height: 100%;
+
+        content: '';
+
+        @include respond-to(md)
+        {
+            width: 50%;
+        }
+    }
+
+    &:before
+    {
+        left: 0;
+
+        background-color: $amethyst;
+    }
+
+    &:after
+    {
+        right: 0;
+
+        display: none;
+
+        background-color: #eb7b00;
+
+        @include respond-to(md)
+        {
+            display: block;
+
+            width: 50%;
+        }
+    }
+    &__row
+    {
+        @extend %clearfix;
+    }
+
+    &__col
+    {
+        width: 100%;
+
+        @include respond-to(sm)
+        {
+            float: left;
+        }
+
+        &--contact
+        {
+            @include respond-to(sm)
+            {
+                width: 50%;
+            }
+            @include respond-to(md)
+            {
+                width: 20%;
+            }
+        }
+
+        &--map
+        {
+            @include respond-to(sm)
+            {
+                width: 50%;
+            }
+            @include respond-to(md)
+            {
+                width: 46%;
+            }
+
+            img
+            {
+                display: block;
+            }
+        }
+
+        &--form
+        {
+            @include respond-to(md)
+            {
+                width: 34%;
+            }
+        }
+    }
+}

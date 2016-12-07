@@ -24,6 +24,14 @@
             left: -30px;
         }
     }
+
+    &--half
+    {
+        float: left;
+
+        width: 50%;
+        padding: 0 $space-mini;
+    }
 }
 
 .form-control-icon
@@ -39,15 +47,19 @@
     display: block;
 
     width: 100%;
+    margin-bottom: $space-small;
     padding: .5rem .75rem;
 
     cursor: pointer;
 
     color: #464a4c;
     border: 1px solid #afafaf;
+    border-radius: 0;
     background-color: #fff;
     background-image: none;
     background-clip: padding-box;
+
+    appearance: none;
 }
 
 .form-control::-ms-expand
@@ -91,10 +103,17 @@
 {
     font-size: 13px;
 
+    margin-bottom: 0;
     padding: $space-mini $space-medium;
 
     border: 0;
     border-bottom: 1px solid #afafaf;
+}
+.form-control-row
+{
+    margin: 0 -$space-mini;
+
+    @extend %clearfix;
 }
 
 .form-control-holder--animated

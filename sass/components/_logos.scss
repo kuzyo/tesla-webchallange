@@ -60,7 +60,7 @@
             }
             @include respond-to(sm)
             {
-                margin: -$space-small 0 0 $space-medium;
+                margin: -$space-small 0 0 $space-mini;
             }
             @include respond-to(xlg)
             {

@@ -4,6 +4,18 @@
 
     color: $white;
 
+    &__address
+    {
+        font-weight: 700;
+
+        text-transform: uppercase;
+    }
+
+    &__schedule
+    {
+        text-transform: uppercase;
+    }
+
     &--advertise
     {
         font-size: 1.176rem;
@@ -19,12 +31,9 @@
 
         .contact__address
         {
-            font-weight: 700;
             line-height: 2.235rem;
 
             margin-bottom: $space-large;
-
-            text-transform: uppercase;
 
             @include respond-to(md)
             {
@@ -38,8 +47,6 @@
 
             margin-bottom: $space-large;
 
-            text-transform: uppercase;
-
             @include respond-to(md)
             {
                 margin-bottom: 3.235rem;
@@ -51,6 +58,16 @@
             line-height: 1.706rem;
 
             margin-bottom: $space-huge;
+        }
+    }
+
+    &--prefooter
+    {
+        font-size: .8571rem;
+
+        @include respond-to(md)
+        {
+            font-size: .7059rem;
         }
     }
 }

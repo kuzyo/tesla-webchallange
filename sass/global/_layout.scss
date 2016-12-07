@@ -93,6 +93,19 @@ html
     }
 }
 
+.prefooter .layout__container
+{
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    @include respond-to(lg)
+    {
+        padding-right: .8824rem;
+        padding-left: .8824rem;
+    }
+}
+
+
 .layout__container
 {
     position: relative;
@@ -159,9 +172,14 @@ html
 {
     &:before
     {
-        width: 38.5%;
+        width: 50%;
 
         background: $amethyst;
+
+        @include respond-to(md)
+        {
+            width: 38.5%;
+        }
     }
 }
 

@@ -1,0 +1,40 @@
+html
+{
+    font-family: $font-primary;
+    font-size: 14px;
+
+    box-sizing: border-box;
+    height: 100%;
+
+    @include respond-to(md)
+    {
+        font-size: 16px;
+    }
+    @include respond-to(lg)
+    {
+        font-size: 17px;
+    }
+}
+
+html,
+body
+{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p
+{
+    color: $black;
+}
+
+img
+{
+    width: 100%;
+    max-width: 100%;
+}
+
+i[class^='icon-']
+{
+    display: inline-block;
+}

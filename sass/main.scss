@@ -7,7 +7,7 @@
 @import 'abstracts/variables/sizes';
 @import 'abstracts/variables/typography';
 
-@import 'global/global';
+@import 'global/general';
 @import 'global/layout';
 @import 'global/sprites';
 @import 'global/icons';
@@ -22,8 +22,10 @@
 @import 'components/header';
 @import 'components/footer';
 @import 'components/desks';
+@import 'components/tile';
 @import 'components/carousels';
 @import 'components/contacts';
+@import 'components/project';
 
 
 

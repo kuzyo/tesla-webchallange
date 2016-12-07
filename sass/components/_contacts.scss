@@ -1,53 +1,56 @@
 .contact
 {
-    font-size: 1.176rem;
-
-    padding: 4.118rem $space-large 4.529rem;
-
     text-align: center;
 
     color: $white;
 
-    &__title
+    &--advertise
     {
-        line-height: 2.235rem;
+        font-size: 1.176rem;
 
-        margin-bottom: $space-small;
-    }
+        padding: 4.118rem $space-large 4.529rem;
 
-    &__address
-    {
-        font-weight: 700;
-        line-height: 2.235rem;
-
-        margin-bottom: $space-large;
-
-        text-transform: uppercase;
-
-        @include respond-to(md)
+        .contact__title
         {
-            margin-bottom: 3.235rem;
+            line-height: 2.235rem;
+
+            margin-bottom: $space-small;
         }
-    }
 
-    &__schedule
-    {
-        line-height: 1.841rem;
-
-        margin-bottom: $space-large;
-
-        text-transform: uppercase;
-
-        @include respond-to(md)
+        .contact__address
         {
-            margin-bottom: 3.235rem;
+            font-weight: 700;
+            line-height: 2.235rem;
+
+            margin-bottom: $space-large;
+
+            text-transform: uppercase;
+
+            @include respond-to(md)
+            {
+                margin-bottom: 3.235rem;
+            }
         }
-    }
 
-    &__phone-list
-    {
-        line-height: 1.706rem;
+        .contact__schedule
+        {
+            line-height: 1.841rem;
 
-        margin-bottom: $space-huge;
+            margin-bottom: $space-large;
+
+            text-transform: uppercase;
+
+            @include respond-to(md)
+            {
+                margin-bottom: 3.235rem;
+            }
+        }
+
+        .contact__phone-list
+        {
+            line-height: 1.706rem;
+
+            margin-bottom: $space-huge;
+        }
     }
 }

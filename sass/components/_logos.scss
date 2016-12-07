@@ -67,6 +67,10 @@
                 font-size: 1.353rem;
 
                 margin: -$space-medium 0 0 $space-medium;
+                @-moz-document url-prefix()
+                {
+                    font-size: 1.176rem;
+                }
             }
         }
     }

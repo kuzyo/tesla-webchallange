@@ -127,6 +127,11 @@
     &__caption-in
     {
         height: 18rem;
+
+        @include respond-to(md)
+        {
+            width: 50%;
+        }
     }
 
     &__caption-date
@@ -376,11 +381,6 @@
         }
     }
 
-    &__item-row
-    {
-        @extend %clearfix;
-    }
-
     &__inner
     {
         width: 100%;
@@ -411,12 +411,6 @@
 
     &__item-img
     {
-        @include respond-to(md)
-        {
-            float: left;
-
-            width: 50%;
-        }
         @include respond-to(lg)
         {
             padding-left: 1.765rem;
@@ -424,8 +418,6 @@
 
         img
         {
-            display: inline-block;
-
             width: 50%;
 
             @include respond-to(md)
@@ -441,10 +433,10 @@
 
         @include respond-to(md)
         {
-            float: left;
-
             width: 50%;
             padding: 2.059rem 0 0 $space-huge;
+
+            vertical-align: top;
         }
         @include respond-to(xlg)
         {
@@ -493,6 +485,11 @@
             @include respond-to(xs)
             {
                 display: inline-block;
+            }
+
+            @-moz-document url-prefix()
+            {
+                padding: .823rem .6rem;
             }
         }
         .btn:last-child

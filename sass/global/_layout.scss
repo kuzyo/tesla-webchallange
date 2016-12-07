@@ -40,7 +40,15 @@ html
     @include respond-to(md)
     {
         padding-top: 0;
-        padding-bottom: 30.29rem;
+        padding-bottom: 31.12em;
+    }
+}
+
+.secondary-page .layout__wrapper
+{
+    @include respond-to(md)
+    {
+        padding-top: 10.18rem;
     }
 }
 
@@ -84,8 +92,6 @@ html
         padding-left: 2.353rem;
     }
 }
-
-
 
 .layout__container
 {
@@ -133,6 +139,8 @@ html
 {
     position: relative;
 
+    height: 100%;
+
     &:before
     {
         position: absolute;
@@ -143,7 +151,17 @@ html
 
         content: '';
 
-        background-image: linear-gradient(45deg, $amethyst 61.5%, transparent 50%);
+        background: linear-gradient(45deg, $amethyst 61.5%, transparent 50%);
+    }
+}
+
+.secondary-page .content
+{
+    &:before
+    {
+        width: 38.5%;
+
+        background: $amethyst;
     }
 }
 

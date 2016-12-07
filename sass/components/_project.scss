@@ -1,1 +1,143 @@
+.projects
+{
+    padding-top: 3.235rem;
+    .layout__container
+    {
+        padding-right: 1rem;
+        padding-left: 1rem;
 
+        @include respond-to(lg)
+        {
+            padding-right: 5.294rem;
+            padding-left: 8.235rem;
+        }
+    }
+}
+
+.project
+{
+    &__item
+    {
+        margin-bottom: 3.529rem;
+    }
+    &__item-img-in
+    {
+        position: relative;
+
+        height: 100%;
+        min-height: 18.53rem;
+
+        img
+        {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+
+            height: 100%;
+
+            object-fit: cover;
+        }
+    }
+
+    &__item-info
+    {
+        padding: $space-large;
+
+        color: $white;
+        box-shadow: 1.5px 2.6px 43px rgba($black, .35);
+
+        @include respond-to(md)
+        {
+            padding: 3.529rem $space-large $space-large 3.525rem;
+        }
+    }
+
+    &__item-title
+    {
+        font-size: 1.1rem;
+        line-height: 2.059rem;
+
+        margin-bottom: $space-huge;
+
+        text-transform: uppercase;
+
+        text-shadow: 1px 1.7px 38px rgba($box-shadow, .75);
+
+        @include respond-to(md)
+        {
+            font-size: 1.371rem;
+
+            margin-bottom: 2.941rem;
+        }
+    }
+
+
+    &__item-mark
+    {
+        font-size: 1.059rem;
+        line-height: 2.647rem;
+
+        margin: 0;
+
+        text-shadow: 1px 1.7px 38px rgba($box-shadow, .75);
+
+        @include respond-to(md)
+        {
+            margin: 2.059rem 0 $space-mini;
+        }
+    }
+
+    &__item-additional
+    {
+        font-size: 1.059rem;
+        line-height: 1.824rem;
+
+        margin-top: $space-large;
+
+        @include respond-to(md)
+        {
+            margin-top: 3.824rem;
+        }
+    }
+}
+
+
+
+
+.breadcrumbs
+{
+    font-family: $font-secondary;
+    font-size: .8824rem;
+    font-weight: bold;
+    line-height: 3.059rem;
+
+    padding: 1.471rem 0;
+
+    text-transform: uppercase;
+
+    color: $span-pearl;
+    i
+    {
+        margin-left: -$space-medium;
+    }
+    a
+    {
+        display: inline-block;
+
+        margin-left: $space-medium;
+
+        vertical-align: middle;
+
+        color: $span-pearl;
+    }
+
+    span
+    {
+        display: inline-block;
+
+        vertical-align: middle;
+
+        color: $white;
+    }
+}

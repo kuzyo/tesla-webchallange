@@ -1,1 +1,8 @@
 @include sprites($spritesheet-sprites);
+
+i[class^='icon-']
+{
+    display: inline-block;
+
+    vertical-align: middle;
+}

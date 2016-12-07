@@ -60,19 +60,10 @@
         }
     }
 
-    &__container
-    {
-        @include respond-to(xlg)
-        {
-            width: 1290px;
-        }
-    }
-
     &__main
     {
         @extend %clearfix;
     }
-
 
     &__option-holder
     {

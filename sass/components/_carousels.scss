@@ -33,12 +33,22 @@
 
         .slick-prev
         {
-            left: $space-small;
+            left: 1rem;
+
+            @include respond-to(lg)
+            {
+                left: 2.059rem;
+            }
         }
 
         .slick-next
         {
-            right: $space-small;
+            right: 1rem;
+
+            @include respond-to(lg)
+            {
+                right: 2.059rem;
+            }
         }
     }
 

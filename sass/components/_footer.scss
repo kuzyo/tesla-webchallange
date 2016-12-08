@@ -1,6 +1,6 @@
 .footer
 {
-    padding: 2rem 0;
+    padding: 1rem 0;
 
     color: $white;
     background-color: $amethyst;
@@ -108,6 +108,36 @@
     &__form-email-field
     {
         max-width: 228px;
+    }
+
+    &--secondary {
+
+      @include respond-to(md)
+      {
+          padding: 3.235rem 0 $space-huge;
+      }
+
+      .layout__container {
+        @include respond-to(lg) {
+          padding-left: 4.706rem;
+          padding-right: 4.706rem;
+        }
+      }
+
+      .footer__info {
+          @include respond-to(md)
+          {
+              width: 30%;
+          }
+      }
+
+      .footer__menus {
+          @include respond-to(md)
+          {
+              width: 70%;
+              padding-left: 0;
+          }
+      }
     }
 }
 

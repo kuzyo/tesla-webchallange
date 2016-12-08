@@ -71,3 +71,15 @@
 {
     @include button-variant($white, $white, $electric-violet, darken($electric-violet, 5%), $electric-violet);
 }
+
+.btn-submit {
+    @include button-variant($white, $black, transparent, $white, $white);
+    border-width: 1px;
+}
+
+.btn-block {
+  padding-left: 0;
+  padding-right: 0;
+  display: block;
+  width: 100%;
+}

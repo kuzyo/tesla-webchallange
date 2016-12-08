@@ -44,13 +44,6 @@ html
     }
 }
 
-.secondary-page .layout__wrapper
-{
-    @include respond-to(md)
-    {
-        padding-top: 10.18rem;
-    }
-}
 
 .header .layout__container
 {
@@ -168,21 +161,29 @@ html
     }
 }
 
-.secondary-page .content
-{
-    &:before
-    {
-        width: 50%;
+.secondary-page {
+  .layout__wrapper
+  {
+      @include respond-to(md)
+      {
+          padding-top: 10.18rem;
+      }
+  }
+  .content
+  {
+      &:before
+      {
+          width: 50%;
 
-        background: $amethyst;
+          background: $amethyst;
 
-        @include respond-to(md)
-        {
-            width: 38.5%;
-        }
-    }
+          @include respond-to(md)
+          {
+              width: 38.5%;
+          }
+      }
+  }
 }
-
 
 .advertise-section
 {

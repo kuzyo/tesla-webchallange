@@ -4,9 +4,10 @@
 
     padding: 1rem 0;
 
-    @include respond-to(md)
+    @include respond-to(lg)
     {
         padding: 0;
+        margin-top: 7.647rem;
     }
 
     &:before,
@@ -21,7 +22,7 @@
 
         content: '';
 
-        @include respond-to(md)
+        @include respond-to(lg)
         {
             width: 50%;
         }
@@ -42,7 +43,7 @@
 
         background-color: #eb7b00;
 
-        @include respond-to(md)
+        @include respond-to(lg)
         {
             display: block;
 
@@ -69,7 +70,7 @@
             {
                 width: 50%;
             }
-            @include respond-to(md)
+            @include respond-to(lg)
             {
                 width: 20%;
             }
@@ -81,7 +82,7 @@
             {
                 width: 50%;
             }
-            @include respond-to(md)
+            @include respond-to(lg)
             {
                 width: 46%;
             }
@@ -94,10 +95,27 @@
 
         &--form
         {
-            @include respond-to(md)
+            @include respond-to(lg)
             {
                 width: 34%;
             }
         }
+    }
+
+    &__form {
+      padding: $space-large;
+
+      @include respond-to(lg) {
+        padding: 4.18rem $space-large 0 3.824rem;
+      }
+    }
+
+    &__form-label {
+      font-family: $font-specific;
+      font-weight: 700;
+      color: $white;
+      font-size: 0.941rem;
+      text-transform: uppercase;
+      margin-bottom: 1.471rem;
     }
 }

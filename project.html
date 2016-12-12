@@ -98,91 +98,222 @@
           <a href="#">
             освітні програми /
           </a>
-          <span>лекції </span>
+          <a href="#">
+            лекції /
+          </a>
+          <span>дифузія</span>
         </div>
       </div>
-      <div class="projects">
-        <div class="project">
-          <div class="layout__container">
-            <div class="project__item tile">
-              <div class="project__item-info tile__cell bg-amethyst">
-                <div class="project__item-mark">Лекція-експеримент</div>
-                <h2 class="project__item-title">
-                  ДИФУЗІЯ. ВЗАЄМОДІЯ МОЛЕКУЛ
-                  ТА АТОМІВ У ПРИРОДІ.
-                </h2>
-
-                <a class="btn btn-secondary" href="#">детальніше</a>
-                <div class="project__item-additional">
-                  <div>Час проведення: Понеділок 12:30</div>
-                  <div>Ціна: від 250грн.</div>
-                </div>
+      <div class="single-project">
+        <div class="layout__container">
+          <div class="single-project__item tile">
+            <div class="tile__cell single-project__info">
+              <div class="single-project__img tile__img">
+                <img src="../images/project-img.png" alt="project">
               </div>
-              <div class="project__item-img tile__cell">
-                <div class="project__item-img-in tile__img">
-                  <img src="../images/back-main.png">
-                </div>
-              </div>
-            </div>
-            <div class="project__item tile">
-              <div class="project__item-img tile__cell">
-                <div class="project__item-img-in tile__img">
-                  <img src="../images/visualizing-magnetic-fields-with-iron-filing.png">
-                </div>
-              </div>
-              <div class="project__item-info tile__cell bg-amethyst">
-                <div class="project__item-mark">Лекція-експеримент</div>
-                <h2 class="project__item-title">
-                  природа магнітів. Експерименти
-                  з магнітами та залізом
-                </h2>
-
-                <a class="btn btn-secondary" href="#">детальніше</a>
-                <div class="project__item-additional">
-                  <div>Час проведення: Понеділок 12:30</div>
-                  <div>Ціна: від 250грн.</div>
-                </div>
+              <div class="single-project__data">
+                <table class="single-project__data-table">
+                  <thead>
+                    <th>Коли:</th>
+                    <th>Тривалість</th>
+                    <th>Ціна:</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        ВТ, СР, ЧТ
+                        <br>
+                        12:00, 16:00
+                      </td>
+                      <td>120 хв</td>
+                      <td>від 250 грн.</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
-            <div class="project__item tile">
-              <div class="project__item-info tile__cell bg-amethyst">
-                <div class="project__item-mark">Виставка «Світло та призма»</div>
-                <h2 class="project__item-title">
-                  Інсталяції зі світловими
-                  ефектами
-                </h2>
+            <div class="tile__cell single-project__tabs">
+              <div class="tabs">
+                <input type="radio" name="tabs" id="tab1" checked>
+                <label class="tabs__label tabs__label--first" for="tab1">
+                    <span>Інформація</span>
+                </label>
+                <input type="radio" name="tabs" id="tab2">
+                <label class="tabs__label" for="tab2">
+                    <span>відгуки (2)</span>
+                </label>
+                <input type="radio" name="tabs" id="tab3">
+                <label class="tabs__label" for="tab3">
+                    <span>квитки</span>
+                </label>
+                <div id="tab-content1" class="tabs__content">
+                    <h4>Лекція-експеримент</h4>
+                    <h3>Дифузія. Взаємодія атомів і молекул</h3>
+                    <p>
+                      Дифу́зія (лат. diffusio — поширення, розтікання, розсіювання, взаємодія) — процес взаємного проникнення молекул або атомів однієї речовини поміж молекул або атомів іншої, що зазвичай приводить до вирівнювання їх концентрацій у всьому займаному об'ємі.
+                      У деяких ситуаціях одна з речовин уже має вирівняну концентрацію, і говорять про дифузію одної речовини в іншій. При цьому зазвичай перенесення речовини відбувається з області з високою концентрацією в область з низькою концентрацією (вздовж вектора градієнта концентрації).
+                      Прикладом дифузії може служити перемішування газів (наприклад, поширення запахів) або рідин (якщо у воду капнути чорнила, то рідина через деякий час стане рівномірно пофарбованою). Інший приклад пов'язаний з твердим тілом: атоми дотичних металів перемішуються на кордоні дотику. Важливу роль дифузія частинок грає у фізиці плазми.
+                    </p>
+                </div> <!-- #tab-content1 -->
+                <div id="tab-content2" class="tabs__content">
+                  <div class="scroll single__project-reviews review">
+                    <div class="review__item">
+                      <div class="review__header">
+                        <div class="review__stars">
+                          <span>Оцінка:</span>
+                          <div class="rating">
+                            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                          </div>
+                        </div>
+                        <div class="review__user">
+                          Марія, м.Київ
+                        </div>
+                      </div>
+                      <p class="review__text">
+                        Класна лекція, прикольний і веселий професор.
+                        Все дуже детально розказали, і навіть запросили провести
+                        експеримент. Дуже рада, що купила квиток
+                      </div>
+                    </p>
+                    <div class="review__item">
+                      <div class="review__header">
+                        <div class="review__stars">
+                          <span>Оцінка:</span>
+                          <div class="rating">
+                            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                          </div>
+                        </div>
+                        <div class="review__user">
+                          Марія, м.Київ
+                        </div>
+                      </div>
+                      <p class="review__text">
+                        Класна лекція, прикольний і веселий професор.
+                        Все дуже детально розказали, і навіть запросили провести
+                        експеримент. Дуже рада, що купила квиток
+                      </p>
+                    </div>
+                    <div class="review__item">
+                      <div class="review__header">
+                        <div class="review__stars">
+                          <span>Оцінка:</span>
+                          <div class="rating">
+                            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                          </div>
+                        </div>
+                        <div class="review__user">
+                          Марія, м.Київ
+                        </div>
+                      </div>
+                      <p class="review__text">
+                        Класна лекція, прикольний і веселий професор.
+                        Все дуже детально розказали, і навіть запросили провести
+                        експеримент. Дуже рада, що купила квиток
+                      </p>
+                    </div>
+                    <div class="review__item">
+                      <div class="review__header">
+                        <div class="review__stars">
+                          <span>Оцінка:</span>
+                          <div class="rating">
+                            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                          </div>
+                        </div>
+                        <div class="review__user">
+                          Марія, м.Київ
+                        </div>
+                      </div>
+                      <p class="review__text">
+                        Класна лекція, прикольний і веселий професор.
+                        Все дуже детально розказали, і навіть запросили провести
+                        експеримент. Дуже рада, що купила квиток
+                      </p>
+                    </div>
+                    <div class="review__item">
+                      <div class="review__header">
+                        <div class="review__stars">
+                          <span>Оцінка:</span>
+                          <div class="rating">
+                            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                          </div>
+                        </div>
+                        <div class="review__user">
+                          Марія, м.Київ
+                        </div>
+                      </div>
+                      <p class="review__text">
+                        Класна лекція, прикольний і веселий професор.
+                        Все дуже детально розказали, і навіть запросили провести
+                        експеримент. Дуже рада, що купила квиток
+                      </p>
+                    </div>
+                  </div>
+                  <form action="" class="tabs__form">
+                    <div class="tabs__form-label">Вiдвідали лекцію? Залишіть відгук</div>
+                    <div class="form-control-row">
+                      <div class="form-control-hoder form-control-holder--half">
+                        <input class="form-control form-control-sm" type="text">
+                      </div>
+                      <div class="form-control-holder form-control-holder--half">
+                        <input class="form-control form-control-sm" type="text">
+                      </div>
+                    </div>
+                    <div class="form-control-row">
+                      <textarea class="form-control" name="" rows="5"></textarea>
+                    </div>
+                    <input class="btn btn-xs btn-submit btn-submit--reversed" type="submit" value="Додати коментар">
 
-                <a class="btn btn-secondary" href="#">детальніше</a>
-                <div class="project__item-additional">
-                  <div>Час проведення: Середа 10:00</div>
-                  <div>Ціна: від 300грн.</div>
+                  </form>
                 </div>
-              </div>
-              <div class="project__item-img tile__cell">
-                <div class="project__item-img-in tile__img">
-                  <img src="../images/harald-haraldsson-prism.png">
+                <div id="tab-content3" class="tabs__content tabs__content--tickets">
+                  <div class="single__project-tickets tickets">
+                    <div class="tickets__row">
+                      <div class="tickets__cell">
+                       Діти до 6 років
+                      </div>
+                      <div class="tickets__cell">
+                       <strong>250 грн</strong>
+                      </div>
+                      <div class="tickets__cell">
+                        <a href="#" class="btn btn-xs btn-secondary">квитки</a>
+                      </div>
+                    </div>
+                    <div class="tickets__row">
+                      <div class="tickets__cell">
+                        Діти від 6 до 18 років
+                      </div>
+                      <div class="tickets__cell">
+                       <strong>250 грн</strong>
+                      </div>
+                      <div class="tickets__cell">
+                        <a href="#" class="btn btn-xs btn-secondary">квитки</a>
+                      </div>
+                    </div>
+                    <div class="tickets__row">
+                      <div class="tickets__cell">
+                        Дорослі
+                      </div>
+                      <div class="tickets__cell">
+                       <strong>250 грн</strong>
+                      </div>
+                      <div class="tickets__cell">
+                        <a href="#" class="btn btn-xs btn-secondary">квитки</a>
+                      </div>
+                    </div>
+                    <div class="tickets__row">
+                      <div class="tickets__cell">
+                        Студенти
+                      </div>
+                      <div class="tickets__cell">
+                       <strong>250 грн</strong>
+                      </div>
+                      <div class="tickets__cell">
+                        <a href="#" class="btn btn-xs btn-secondary">квитки</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
             </div>
-            <div class="project__item tile">
-              <div class="project__item-img tile__cell">
-                <div class="project__item-img-in tile__img">
-                  <img src="../images/photography-projects.png">
-                </div>
-              </div>
-              <div class="project__item-info tile__cell bg-amethyst">
-                <div class="project__item-mark">Лекція-експеримент</div>
-                <h2 class="project__item-title">
-                  Природа світла. Ефект
-                  заломлення у воді
-                </h2>
-
-                <a class="btn btn-secondary" href="#">детальніше</a>
-                <div class="project__item-additional">
-                  <div>Час проведення: Понеділок 15:30</div>
-                  <div>Ціна: від 90грн.</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -444,8 +575,9 @@
   </footer>
 </div>
 
-  <script src="js/vendor/jquery-3.1.1.min.js"></script>
-  <script src="js/vendor/slick.min.js"></script>
-  <script src="js/min/scripts.min.js"></script>
+<script src="js/vendor/jquery-3.1.1.min.js"></script>
+<script src="js/vendor/enscroll-0.6.1.min.js"></script>
+<script src="js/vendor/slick.min.js"></script>
+<script src="js/min/scripts.min.js"></script>
 </body>
 </html>

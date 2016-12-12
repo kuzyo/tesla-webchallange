@@ -1,0 +1,17 @@
+.scroll {
+  &__track {
+    background: #d8d8d8;
+    margin-right: 2px;
+    transition: background 250ms linear;
+    width: 8px;
+    border-radius: 8px;
+  }
+
+  &__handle {
+    width: 8px;
+    right: 0;
+    background-color: $electric-violet;
+    border-radius: 8px;
+    transition: width 250ms;
+  }
+}

@@ -26,6 +26,15 @@ body
 p
 {
     color: $black;
+    line-height: 1.412rem;
+
+    @include respond-to(md) {
+      font-size: 0.875rem;
+    }
+
+    @include respond-to(lg) {
+      font-size: 0.8235rem;
+    }
 }
 
 img

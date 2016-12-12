@@ -1,0 +1,49 @@
+.single-project {
+  .layout__container {
+    @include respond-to(lg) {
+      padding-left: 7.529rem;
+      padding-right: $space-large;
+    }
+  }
+
+  &__info,
+  &__tabs {
+    vertical-align: top;
+  }
+
+  &__info {
+    width: 45%;
+  }
+
+  &__tabs {
+    width: 55%;
+  }
+
+  &__img {
+    height: 33.24rem;
+    box-shadow: 0 0 40px rgba($box-shadow, 0.3);
+  }
+
+  &__data {
+    background: $electric-violet;
+    padding: $space-small 1.471rem;
+  }
+
+  &__data-table {
+    width: 100%;
+    color: $white;
+    text-align: left;
+    font-size: 1rem;
+
+    th {
+      font-weight: normal;
+    }
+
+    td {
+      font-weight: 700;
+      padding-top: $space-medium;
+      font-family: $font-specific;
+    }
+  }
+}
+

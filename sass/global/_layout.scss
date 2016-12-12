@@ -126,7 +126,7 @@ html
         width: 1140px;
         max-width: 100%;
     }
-    @include respond-to(lg)
+    @include respond-to(xlg)
     {
         width: 1290px;
         max-width: 100%;

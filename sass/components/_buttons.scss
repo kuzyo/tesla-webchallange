@@ -26,6 +26,13 @@
     }
 }
 
+.btn-xs {
+    @include respond-to(xlg)
+    {
+        padding: .823rem 2.467rem;
+    }
+}
+
 .btn-sm
 {
     padding: .823rem 1.294rem;
@@ -75,6 +82,10 @@
 .btn-submit {
     @include button-variant($white, $black, transparent, $white, $white);
     border-width: 1px;
+}
+
+.btn-submit--reversed {
+    @include button-variant($black, $white, transparent, $black, $black);
 }
 
 .btn-block {

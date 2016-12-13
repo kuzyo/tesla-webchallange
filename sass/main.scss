@@ -18,12 +18,12 @@
 
 @import 'components/logos';
 @import 'components/buttons';
+@import 'components/carousels';
+@import 'components/desks';
 @import 'components/forms';
 @import 'components/header';
 @import 'components/footer';
-@import 'components/desks';
 @import 'components/tile';
-@import 'components/carousels';
 @import 'components/contacts';
 @import 'components/project';
 @import 'components/prefooter';
@@ -32,6 +32,10 @@
 @import 'components/single-project';
 @import 'components/scroll';
 @import 'components/review';
+@import 'components/rating';
+@import 'components/breadcrumbs';
+
+@import 'pages/single-project-page';
 
 
 

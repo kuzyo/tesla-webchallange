@@ -1,83 +1,149 @@
-.tabs {
+.tabs
+{
     margin: 2.941rem auto;
 
-  input[type=radio] {
-      display:none;
-  }
-
-  span {
-    display: inline-block;
-  }
-
-  &__label {
-      display: block;
-      float: left;
-      color: $span-pearl;
-      font-family: $font-secondary;
-      font-size: 0.884rem;
-      text-transform: uppercase;
-      font-weight:: bold;
-
-      cursor: pointer;
-      transition: all 0.5s;
-      margin-right: 2.325rem;
-      padding: 0 $space-large;
-
-      &--first {
-        padding-left: 5rem;
-      }
-
-      &:hover {
-        color: $amethyst;
-      }
-  }
-
-  &__content {
-    clear: both;
-    display: none;
-    width: 100%;
-    padding-left: 5rem;
-    padding-top: 3.824rem;
-
-    &--tickets {
-      padding-left: 0;
+    input[type=radio]
+    {
+        display: none;
     }
 
-    h4 {
-      font-size: 0.8235rem;
-      text-transform: uppercase;
+    span
+    {
+        display: inline-block;
     }
 
-    h3 {
-      font-size: 1.176rem;
-      line-height: 3.059rem;
-      text-transform: uppercase;
-      margin-bottom: $space-large;
+    &__label
+    {
+        font-family: $font-secondary;
+        font-size: .884rem;
+        font-weight: bold;
+
+        display: block;
+        float: left;
+
+        padding: 0 $space-small;
+
+        cursor: pointer;
+        transition: all .5s;
+        text-transform: uppercase;
+
+        color: $span-pearl;
+
+        @include respond-to(md)
+        {
+            padding: 0 $space-large;
+        }
+
+        &--first
+        {
+            padding-left: $space-large;
+
+            @include respond-to(md)
+            {
+                padding-left: 5rem;
+            }
+        }
+
+        &:hover
+        {
+            color: $amethyst;
+        }
     }
-  }
 
-  &__form {
-    margin-top: 3.824rem;
-  }
+    &__content
+    {
+        display: none;
+        clear: both;
 
-  &__form-label {
-    margin-bottom: $space-large;
-    font-size: 0.823rem;
-  }
+        width: 100%;
+        padding-top: $space-large;
+        padding-left: $space-large;
 
-  .form-control {
-    margin-bottom: $space-small;
-  }
+        @include respond-to(md)
+        {
+            padding-top: 3.824rem;
+            padding-left: 5rem;
+        }
+
+        &--tickets
+        {
+            padding-left: 0;
+        }
+
+        h4
+        {
+            text-transform: uppercase;
+
+            @include respond-to(md)
+            {
+                font-size: .875rem;
+            }
+            @include respond-to(lg)
+            {
+                font-size: .8235rem;
+            }
+        }
+
+        h3
+        {
+            font-size: 1.429rem;
+
+            margin-bottom: $space-large;
+
+            text-transform: uppercase;
+
+            @include respond-to(lg)
+            {
+                font-size: 1.176rem;
+                line-height: 3.059rem;
+            }
+        }
+    }
+
+    &__form
+    {
+        margin-top: 3.824rem;
+
+        @include respond-to(md)
+        {
+            padding-right: 5rem;
+        }
+    }
+
+    &__form-row
+    {
+        @include respond-to(md)
+        {
+            padding-right: 5rem;
+        }
+    }
+
+    &__form-label
+    {
+        font-size: .823rem;
+
+        margin-bottom: 1.471rem;
+    }
+
+    .form-control
+    {
+        margin-bottom: $space-small;
+    }
+
+    textarea.form-control
+    {
+        margin-bottom: $space-large;
+    }
 }
 
-.tabs [id^="tab"]:checked + label {
+.tabs [id^='tab']:checked + label
+{
     color: $amethyst;
 }
 
 #tab1:checked ~ #tab-content1,
 #tab2:checked ~ #tab-content2,
-#tab3:checked ~ #tab-content3 {
+#tab3:checked ~ #tab-content3
+{
     display: block;
 }
-
-

@@ -7,7 +7,7 @@
 <title>Tesla</title>
 <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="secondary-page">
+<body class="secondary-page single-project-page">
 <div class="layout">
   <header class="header">
     <div class="layout__container">
@@ -85,7 +85,7 @@
               </li>
             </ul>
           </nav>
-          <a href="#" class="header__btn btn btn-primary">Квитки</a>
+          <a href="#" class="header__btn btn-xs btn btn-primary">Квитки</a>
         </div>
       </div>
     </div>
@@ -150,11 +150,17 @@
                     <h4>Лекція-експеримент</h4>
                     <h3>Дифузія. Взаємодія атомів і молекул</h3>
                     <p>
-                      Дифу́зія (лат. diffusio — поширення, розтікання, розсіювання, взаємодія) — процес взаємного проникнення молекул або атомів однієї речовини поміж молекул або атомів іншої, що зазвичай приводить до вирівнювання їх концентрацій у всьому займаному об'ємі.
-                      У деяких ситуаціях одна з речовин уже має вирівняну концентрацію, і говорять про дифузію одної речовини в іншій. При цьому зазвичай перенесення речовини відбувається з області з високою концентрацією в область з низькою концентрацією (вздовж вектора градієнта концентрації).
-                      Прикладом дифузії може служити перемішування газів (наприклад, поширення запахів) або рідин (якщо у воду капнути чорнила, то рідина через деякий час стане рівномірно пофарбованою). Інший приклад пов'язаний з твердим тілом: атоми дотичних металів перемішуються на кордоні дотику. Важливу роль дифузія частинок грає у фізиці плазми.
+                      Дифу́зія (лат. diffusio — поширення, розтікання, розсіювання, взаємодія) —
+                      процес взаємного проникнення молекул або атомів однієї речовини поміж молекул або атомів іншої,
+                      що зазвичай приводить до вирівнювання їх концентрацій у всьому займаному об'ємі.
+                      У деяких ситуаціях одна з речовин уже має вирівняну концентрацію, і говорять про дифузію одної
+                      речовини в іншій. При цьому зазвичай перенесення речовини відбувається з області з
+                      високою концентрацією в область з низькою концентрацією (вздовж вектора градієнта концентрації).
+                      Прикладом дифузії може служити перемішування газів (наприклад, поширення запахів) або
+                      рідин (якщо у воду капнути чорнила, то рідина через деякий час стане рівномірно пофарбованою).
+                      Інший приклад пов'язаний з твердим тілом: атоми дотичних металів перемішуються на кордоні дотику. Важливу роль дифузія частинок грає у фізиці плазми.
                     </p>
-                </div> <!-- #tab-content1 -->
+                </div>
                 <div id="tab-content2" class="tabs__content">
                   <div class="scroll single__project-reviews review">
                     <div class="review__item">
@@ -252,17 +258,14 @@
                     <div class="tabs__form-label">Вiдвідали лекцію? Залишіть відгук</div>
                     <div class="form-control-row">
                       <div class="form-control-hoder form-control-holder--half">
-                        <input class="form-control form-control-sm" type="text">
+                        <input class="form-control form-control-sm" type="text" placeholder="Ім’я">
                       </div>
                       <div class="form-control-holder form-control-holder--half">
-                        <input class="form-control form-control-sm" type="text">
+                        <input class="form-control form-control-sm" type="text" placeholder="Місто">
                       </div>
                     </div>
-                    <div class="form-control-row">
-                      <textarea class="form-control" name="" rows="5"></textarea>
-                    </div>
-                    <input class="btn btn-xs btn-submit btn-submit--reversed" type="submit" value="Додати коментар">
-
+                    <textarea class="form-control" name="" rows="2" placeholder="Відгук"></textarea>
+                    <input class="btn btn-sm btn-submit btn-submit--reversed" type="submit" value="Додати коментар">
                   </form>
                 </div>
                 <div id="tab-content3" class="tabs__content tabs__content--tickets">
@@ -350,13 +353,13 @@
                 <div class="prefooter__form-label">
                   Запланувати візит
                 </div>
-                <input class="form-control" type="text">
+                <input class="form-control" type="text" placeholder="Дата">
                 <div class="form-control-row">
                   <div class="form-control-holder form-control-holder--half">
-                    <input class="form-control" type="text">
+                    <input class="form-control" type="text" placeholder="Час">
                   </div>
                   <div class="form-control-holder form-control-holder--half">
-                    <input class="form-control" type="text">
+                    <input class="form-control" type="text" placeholder="Кількість білетів">
                   </div>
                 </div>
                 <div class="form-control-row">

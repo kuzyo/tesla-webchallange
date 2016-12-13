@@ -41,7 +41,7 @@
 
 .form-control
 {
-    font-size: 1rem;
+    font-size: 14px;
     line-height: 1.25;
 
     display: block;
@@ -52,7 +52,7 @@
 
     cursor: pointer;
 
-    color: #464a4c;
+    color: #464646;
     border: 1px solid #afafaf;
     border-radius: 0;
     background-color: #fff;
@@ -62,8 +62,9 @@
     appearance: none;
 }
 
-.form-control-sm {
-  padding: 0.3529rem 0.75rem;
+.form-control-sm
+{
+    padding: .3529rem .75rem;
 }
 
 .form-control::-ms-expand
@@ -81,26 +82,34 @@
 
 .form-control::-webkit-input-placeholder
 {
+    font-style: italic;
+
     opacity: 1;
-    color: #999;
+    color: #c2c2c2;
 }
 
 .form-control::-moz-placeholder
 {
+    font-style: italic;
+
     opacity: 1;
-    color: #999;
+    color: #c2c2c2;
 }
 
 .form-control:-ms-input-placeholder
 {
+    font-style: italic;
+
     opacity: 1;
-    color: #999;
+    color: #c2c2c2;
 }
 
 .form-control::placeholder
 {
+    font-style: italic;
+
     opacity: 1;
-    color: #999;
+    color: #c2c2c2;
 }
 
 .form-control--minimal

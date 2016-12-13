@@ -1,49 +1,83 @@
-.single-project {
-  .layout__container {
-    @include respond-to(lg) {
-      padding-left: 7.529rem;
-      padding-right: $space-large;
-    }
-  }
+.single-project
+{
+    margin-top: $space-large;
 
-  &__info,
-  &__tabs {
-    vertical-align: top;
-  }
-
-  &__info {
-    width: 45%;
-  }
-
-  &__tabs {
-    width: 55%;
-  }
-
-  &__img {
-    height: 33.24rem;
-    box-shadow: 0 0 40px rgba($box-shadow, 0.3);
-  }
-
-  &__data {
-    background: $electric-violet;
-    padding: $space-small 1.471rem;
-  }
-
-  &__data-table {
-    width: 100%;
-    color: $white;
-    text-align: left;
-    font-size: 1rem;
-
-    th {
-      font-weight: normal;
+    @include respond-to(md)
+    {
+        margin-top: 0;
     }
 
-    td {
-      font-weight: 700;
-      padding-top: $space-medium;
-      font-family: $font-specific;
+    .layout__container
+    {
+        @include respond-to(lg)
+        {
+            padding-right: $space-large;
+            padding-left: 7.529rem;
+        }
     }
-  }
+
+    &__info,
+    &__tabs
+    {
+        vertical-align: top;
+    }
+
+    &__info
+    {
+        @include respond-to(md)
+        {
+            width: 45%;
+        }
+    }
+
+    &__tabs
+    {
+        @include respond-to(md)
+        {
+            width: 55%;
+        }
+    }
+
+    &__img
+    {
+        height: 20rem;
+
+        box-shadow: 0 0 40px rgba($box-shadow, .3);
+
+        @include respond-to(md)
+        {
+            height: 33.24rem;
+        }
+    }
+
+    &__data
+    {
+        padding: $space-small 1.471rem;
+
+        background: $electric-violet;
+    }
+
+    &__data-table
+    {
+        font-size: 1rem;
+
+        width: 100%;
+
+        text-align: left;
+
+        color: $white;
+
+        th
+        {
+            font-weight: normal;
+        }
+
+        td
+        {
+            font-family: $font-specific;
+            font-weight: 700;
+
+            padding-top: $space-medium;
+        }
+    }
 }
-

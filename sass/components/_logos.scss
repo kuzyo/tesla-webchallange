@@ -72,6 +72,11 @@
                     font-size: 1.176rem;
                 }
             }
+
+            @-moz-document url-prefix()
+            {
+                font-size: 1.125rem;
+            }
         }
     }
 

@@ -22,6 +22,11 @@
 
         padding: 4.118rem $space-large 4.529rem;
 
+        @include respond-to(md)
+        {
+            height: 40.12rem;
+        }
+
         .contact__title
         {
             line-height: 2.235rem;
@@ -67,39 +72,41 @@
 
         padding: $space-large 0;
 
-        @include respond-to(lg) {
-          padding: $space-huge 0 0;
-        }
-
         @include respond-to(lg)
         {
             font-size: .75rem;
+
+            padding: $space-huge 0 0;
         }
 
         .contact__title
         {
             margin-bottom: $space-small;
-
         }
 
-        .contact__address {
-          margin-bottom: $space-large;
-
-            @include respond-to(xlg) {
-              margin-bottom: 2.647rem;
-            }
-        }
-
-        .contact__schedule {
+        .contact__address
+        {
             margin-bottom: $space-large;
 
-            @include respond-to(xlg) {
-              margin-bottom: 2.059rem;
+            @include respond-to(xlg)
+            {
+                margin-bottom: 2.647rem;
             }
         }
 
-        .contact__phone-list {
-          margin-bottom: $space-large;
+        .contact__schedule
+        {
+            margin-bottom: $space-large;
+
+            @include respond-to(xlg)
+            {
+                margin-bottom: 2.059rem;
+            }
+        }
+
+        .contact__phone-list
+        {
+            margin-bottom: $space-large;
         }
     }
 }

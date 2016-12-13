@@ -173,12 +173,13 @@ html
   {
       &:before
       {
-          width: 50%;
+        display: none;
+        background: $amethyst;
 
-          background: $amethyst;
 
           @include respond-to(md)
           {
+            display: block;
               width: 38.5%;
           }
       }

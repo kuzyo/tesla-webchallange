@@ -1,0 +1,50 @@
+.breadcrumbs
+{
+    font-family: $font-secondary;
+    font-size: .8824rem;
+    font-weight: bold;
+    line-height: 3.059rem;
+
+    padding: 1.471rem 0;
+
+    text-transform: uppercase;
+
+    color: $span-pearl;
+    background-color: $amethyst;
+
+    @include respond-to(md)
+    {
+        background: transparent;
+    }
+
+    i
+    {
+        @include respond-to(lg)
+        {
+            margin-left: -$space-medium;
+        }
+    }
+
+    a
+    {
+        display: inline-block;
+
+        vertical-align: middle;
+
+        color: $span-pearl;
+
+        &:first-child
+        {
+            margin-left: $space-medium;
+        }
+    }
+
+    span
+    {
+        display: inline-block;
+
+        vertical-align: middle;
+
+        color: $white;
+    }
+}

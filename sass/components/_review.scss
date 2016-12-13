@@ -1,49 +1,58 @@
-.review {
+.review
+{
     overflow: auto;
+
     width: 100% !important;
     height: 19.41rem;
 
-    &__stars {
-      float: right;
-      font-size: 0.8235rem;
-      margin-top: -$space-mini;
+    &__stars
+    {
+        float: right;
+
+        margin-top: -$space-mini;
+
+        @include respond-to(md)
+        {
+            font-size: .875rem;
+        }
+        @include respond-to(lg)
+        {
+            font-size: .8235rem;
+        }
     }
 
-    &__user {
-      font-size: 0.8235rem;
+    &__user
+    {
+        @include respond-to(md)
+        {
+            font-size: .875rem;
+        }
+        @include respond-to(lg)
+        {
+            font-size: .8235rem;
+        }
     }
 
-    &__item {
-      margin-bottom: $space-large;
-      padding-right: 5.295rem;
+    &__item
+    {
+        margin-bottom: $space-large;
+        padding-right: $space-huge;
+
+        @include respond-to(md)
+        {
+            padding-right: 5.295rem;
+        }
     }
 
-    &__header {
-     margin-bottom: $space-medium;
+    &__header
+    {
+        margin-bottom: $space-medium;
     }
 
-    &__text {
-      color: #8a8a8a;
-      line-height: 1.118rem;
+    &__text
+    {
+        line-height: 1.118rem;
+
+        color: #8a8a8a;
     }
-}
-
-.rating {
-  unicode-bidi: bidi-override;
-  direction: rtl;
-
-  display: inline-block;
-}
-.rating > span {
-  display: inline-block;
-  position: relative;
-  width: 1rem;
-  cursor: pointer;
-  font-size: 1.176rem;
-}
-.rating > span:hover:before,
-.rating > span:hover ~ span:before {
-   content: "\2605";
-   position: absolute;
-   color: gold;
 }

@@ -6,8 +6,8 @@
 
     @include respond-to(lg)
     {
-        padding: 0;
         margin-top: 7.647rem;
+        padding: 0;
     }
 
     &:before,
@@ -90,6 +90,11 @@
             img
             {
                 display: block;
+
+                @include respond-to(md)
+                {
+                    height: 21.65rem;
+                }
             }
         }
 
@@ -102,20 +107,26 @@
         }
     }
 
-    &__form {
-      padding: $space-large;
+    &__form
+    {
+        padding: $space-large 0;
 
-      @include respond-to(lg) {
-        padding: 4.18rem $space-large 0 3.824rem;
-      }
+        @include respond-to(lg)
+        {
+            padding: 4.18rem $space-large 0 3.824rem;
+        }
     }
 
-    &__form-label {
-      font-family: $font-specific;
-      font-weight: 700;
-      color: $white;
-      font-size: 0.941rem;
-      text-transform: uppercase;
-      margin-bottom: 1.471rem;
+    &__form-label
+    {
+        font-family: $font-specific;
+        font-size: .941rem;
+        font-weight: 700;
+
+        margin-bottom: 1.471rem;
+
+        text-transform: uppercase;
+
+        color: $white;
     }
 }

@@ -1,0 +1,30 @@
+.rating
+{
+    display: inline-block;
+
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating > span
+{
+    font-size: 1.176rem;
+
+    position: relative;
+
+    display: inline-block;
+
+    width: 1rem;
+
+    cursor: pointer;
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before
+{
+    position: absolute;
+
+    content: '\2605';
+
+    color: gold;
+}

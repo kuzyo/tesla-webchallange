@@ -26,7 +26,8 @@
     }
 }
 
-.btn-xs {
+.btn-xs
+{
     @include respond-to(xlg)
     {
         padding: .823rem 2.467rem;
@@ -79,18 +80,23 @@
     @include button-variant($white, $white, $electric-violet, darken($electric-violet, 5%), $electric-violet);
 }
 
-.btn-submit {
-    @include button-variant($white, $black, transparent, $white, $white);
+.btn-submit
+{
     border-width: 1px;
+
+    @include button-variant($white, $black, transparent, $white, $white);
 }
 
-.btn-submit--reversed {
+.btn-submit--reversed
+{
     @include button-variant($black, $white, transparent, $black, $black);
 }
 
-.btn-block {
-  padding-left: 0;
-  padding-right: 0;
-  display: block;
-  width: 100%;
+.btn-block
+{
+    display: block;
+
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
 }

@@ -1,17 +1,25 @@
-.scroll {
-  &__track {
-    background: #d8d8d8;
-    margin-right: 2px;
-    transition: background 250ms linear;
-    width: 8px;
-    border-radius: 8px;
-  }
+.scroll
+{
+    &__track
+    {
+        width: 8px;
+        margin-right: 2px;
 
-  &__handle {
-    width: 8px;
-    right: 0;
-    background-color: $electric-violet;
-    border-radius: 8px;
-    transition: width 250ms;
-  }
+        transition: background 250ms linear;
+
+        border-radius: 8px;
+        background: #d8d8d8;
+    }
+
+    &__handle
+    {
+        right: 0;
+
+        width: 8px;
+
+        transition: width 250ms;
+
+        border-radius: 8px;
+        background-color: $electric-violet;
+    }
 }

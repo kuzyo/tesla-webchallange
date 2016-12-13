@@ -7,12 +7,8 @@
 
     @include respond-to(md)
     {
-      height: 31.12rem;
-    }
-
-    @include respond-to(md)
-    {
         padding: 4.706rem 0 $space-huge;
+        height: 31.12rem;
     }
     @include respond-to(md)
     {

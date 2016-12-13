@@ -147,11 +147,6 @@
 
             margin-left: $space-large;
         }
-        @include respond-to(xlg)
-        {
-            margin-left: 1.765rem;
-            padding: .823rem 2.467rem;
-        }
     }
 }
 

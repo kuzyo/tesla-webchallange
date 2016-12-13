@@ -21,6 +21,7 @@
     {
         @include respond-to(lg)
         {
+            margin-right: $space-medium;
             margin-left: -$space-medium;
         }
     }
@@ -32,11 +33,6 @@
         vertical-align: middle;
 
         color: $span-pearl;
-
-        &:first-child
-        {
-            margin-left: $space-medium;
-        }
     }
 
     span

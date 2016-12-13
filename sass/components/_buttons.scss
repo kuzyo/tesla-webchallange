@@ -72,7 +72,7 @@
 {
     font-family: $font-specific;
 
-    @include button-variant(#000, $white, transparent, $electric-violet, $electric-violet);
+    @include button-variant($black, $white, transparent, $electric-violet, $electric-violet);
 }
 
 .btn-highlighted

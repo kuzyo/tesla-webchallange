@@ -1,10 +1,10 @@
-.single-project-page
+.projects-page
 {
     .prefooter
     {
         @include respond-to(md)
         {
-            margin-top: 5.882rem;
+            margin-top: 7.647rem;
         }
     }
 }

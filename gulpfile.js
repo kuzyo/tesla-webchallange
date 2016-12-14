@@ -9,6 +9,8 @@ var rename       = require("gulp-rename");
 var imagemin     = require("gulp-imagemin");
 var pngquant     = require('imagemin-pngquant');
 var spritesmith  = require('gulp.spritesmith');
+var critical = require('critical');
+
 
 gulp.task('sass', function() {
   gulp.src('sass/**/*.scss')
@@ -64,7 +66,21 @@ gulp.task('images', function () {
   .pipe(gulp.dest('images'));
 });
 
-gulp.task('default', ['sass', 'browser-sync', 'scripts', 'sprite', 'images'], function () {
+gulp.task('critical', function (cb) {
+  critical.generate({
+    base: './',
+    src: 'index.html',
+    css: ['css/main.css'],
+    width: 1366,
+    height: 1100,
+    dest: 'css/critical-index.css',
+    minify: true,
+    extract: false,
+    ignore: ['font-face']
+  });
+});
+
+gulp.task('default', ['sass', 'browser-sync', 'critical', 'scripts', 'sprite', 'images'], function () {
   gulp.watch('sass/**/*.scss', ['sass']);
   gulp.watch('js/**/*.js', ['scripts']);
   gulp.watch('images/*', ['images']);

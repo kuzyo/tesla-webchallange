@@ -75,7 +75,6 @@ gulp.task('critical', function (cb) {
     height: 1100,
     dest: 'css/critical-index.css',
     minify: true,
-    extract: false,
     ignore: ['font-face']
   });
 });

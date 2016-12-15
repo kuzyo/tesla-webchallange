@@ -15,6 +15,24 @@
 
             vertical-align: middle;
         }
+
+        &--push
+        {
+            @include respond-to(md)
+            {
+                position: relative;
+                left: 50%;
+            }
+        }
+
+        &--pull
+        {
+            @include respond-to(md)
+            {
+                position: relative;
+                right: 50%;
+            }
+        }
     }
 
     &__img

@@ -74,7 +74,7 @@
     {
         position: absolute;
         z-index: 2;
-        top: -85%;
+        top: -84%;
         left: 0;
 
         width: 25.39rem;
@@ -87,7 +87,7 @@
 
         @include respond-to(md)
         {
-            height: 251%;
+            height: 252%;
         }
     }
 
@@ -338,7 +338,7 @@
         {
             .tripple-carousel__h
             {
-                background-color: rgba(#de790d, .35);
+                background-color: rgba($flush-orange, .35);
             }
         }
 
@@ -409,8 +409,6 @@
         font-size: .9412rem;
         font-style: italic;
         line-height: 1.471rem;
-
-        color: #282b30;
     }
 }
 
@@ -495,7 +493,7 @@
 
         margin-bottom: $space-large;
 
-        color: #282b30;
+        color: $text-color;
 
         @include respond-to(md)
         {
@@ -512,7 +510,7 @@
         margin-bottom: $space-large;
         padding-right: 2.059rem;
 
-        color: #282b30;
+        color: $text-color;
 
         @include respond-to(md)
         {

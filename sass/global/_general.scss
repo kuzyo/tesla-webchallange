@@ -2,8 +2,8 @@ html
 {
     font-family: $font-primary;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
+    font-style: normal;
 
     box-sizing: border-box;
     height: 100%;
@@ -27,15 +27,17 @@ body
 
 p
 {
-    color: $black;
     line-height: 1.412rem;
 
-    @include respond-to(md) {
-      font-size: 0.875rem;
-    }
+    color: $text-color;
 
-    @include respond-to(lg) {
-      font-size: 0.8235rem;
+    @include respond-to(md)
+    {
+        font-size: .875rem;
+    }
+    @include respond-to(lg)
+    {
+        font-size: .8235rem;
     }
 }
 

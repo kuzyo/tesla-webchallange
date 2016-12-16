@@ -161,29 +161,31 @@ html
     }
 }
 
-.secondary-page {
-  .layout__wrapper
-  {
-      @include respond-to(md)
-      {
-          padding-top: 10.18rem;
-      }
-  }
-  .content
-  {
-      &:before
-      {
-        display: none;
-        background: $amethyst;
+.secondary-page
+{
+    .layout__wrapper
+    {
+        @include respond-to(md)
+        {
+            padding-top: 10.18rem;
+        }
+    }
+    .content
+    {
+        &:before
+        {
+            display: none;
 
+            background: $amethyst;
 
-          @include respond-to(md)
-          {
-            display: block;
-              width: 38.5%;
-          }
-      }
-  }
+            @include respond-to(md)
+            {
+                display: block;
+
+                width: 38.5%;
+            }
+        }
+    }
 }
 
 .advertise-section
@@ -228,7 +230,7 @@ html
             background-image: url('../images/tesla-pic.png');
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-position: 25% 0;
+            background-position: 22% 25%;
 
             @include respond-to(md)
             {

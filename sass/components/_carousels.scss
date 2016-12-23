@@ -125,7 +125,7 @@
 
         width: 100%;
 
-        color: #fbfafc;
+        color: $solitude;
 
         @include respond-to(md)
         {
@@ -183,13 +183,11 @@
     {
         font-family: $font-primary;
         font-size: 1.471rem;
-        font-size: 1rem;
-        line-height: 2.647rem;
         line-height: 2.647rem;
 
         margin-bottom: $space-mini;
 
-        color: #3d176b;
+        color: $persian-indigo;
         text-shadow: 1px 1.7px 38px rgba(27, 27, 30, .75);
 
         @include respond-to(xs)
@@ -208,8 +206,8 @@
 
         text-transform: uppercase ;
 
-        color: #fbfafc;
-        text-shadow: 1px 1.7px 46px rgba(27, 27, 30, .75);
+        color: $solitude;
+        text-shadow: 1px 1.7px 46px rgba($box-shadow, .75);
 
         @include respond-to(xs)
         {
@@ -255,11 +253,12 @@
 
 .tripple-carousel
 {
+    @extend %clearfix;
+
     @include respond-to(md)
     {
         padding: 0 2.941rem;
     }
-    @extend %clearfix;
 
     &.slick-carousel
     {
@@ -308,7 +307,7 @@
                     transition: transform .6s;
                     transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
 
-                    background: rgba(255,255,255,.5);
+                    background: rgba($white,.5);
                 }
             }
 

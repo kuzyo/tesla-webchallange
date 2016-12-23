@@ -52,7 +52,7 @@
 
             margin: -$space-mini 0 0 $space-mini;
 
-            color: #040404;
+            color: $light-black;
 
             @include respond-to(xs)
             {

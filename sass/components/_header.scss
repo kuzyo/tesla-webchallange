@@ -69,9 +69,10 @@
 
     &__option-holder
     {
+        @extend %clearfix;
+
         display: none;
 
-        @extend %clearfix;
         @include respond-to(md)
         {
             display: block;
@@ -154,9 +155,10 @@
 
 .navigation
 {
+    @extend %clearfix;
+
     background-color: $white;
 
-    @extend %clearfix;
     @include respond-to(lg)
     {
         padding: 0 $space-mini;

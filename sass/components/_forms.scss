@@ -53,7 +53,7 @@
     cursor: pointer;
 
     color: $silver;
-    border: 1px solid #afafaf;
+    border: 1px solid $form-border;
     border-radius: 0;
     background-color: $white;
     background-image: none;
@@ -85,7 +85,7 @@
     font-style: italic;
 
     opacity: 1;
-    color: #c2c2c2;
+    color: $form-placeholder;
 }
 
 .form-control::-moz-placeholder
@@ -93,7 +93,7 @@
     font-style: italic;
 
     opacity: 1;
-    color: #c2c2c2;
+    color: $form-placeholder;
 }
 
 .form-control:-ms-input-placeholder
@@ -101,7 +101,7 @@
     font-style: italic;
 
     opacity: 1;
-    color: #c2c2c2;
+    color: $form-placeholder;
 }
 
 .form-control::placeholder
@@ -109,7 +109,7 @@
     font-style: italic;
 
     opacity: 1;
-    color: #c2c2c2;
+    color: $form-placeholder;
 }
 
 .form-control--minimal
@@ -120,14 +120,14 @@
     padding: $space-mini $space-medium;
 
     border: 0;
-    border-bottom: 1px solid #afafaf;
+    border-bottom: 1px solid $form-border;
 }
 
 .form-control-row
 {
-    margin: 0 -$space-mini;
-
     @extend %clearfix;
+
+    margin: 0 -$space-mini;
 }
 
 .form-control-holder--animated
@@ -283,6 +283,11 @@
         top: $space-small;
         right: $space-medium;
     }
+}
+
+select::-ms-expand
+{
+    display: none;
 }
 
 input[type=search]

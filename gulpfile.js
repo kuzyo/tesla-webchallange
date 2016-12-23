@@ -79,7 +79,7 @@ gulp.task('critical', function (cb) {
   });
 });
 
-gulp.task('default', ['sass', 'browser-sync', 'scripts', 'sprite', 'images'], function () {
+gulp.task('default', ['sass', 'browser-sync', 'scripts', 'images'], function () {
   gulp.watch('sass/**/*.scss', ['sass']);
   gulp.watch('js/**/*.js', ['scripts']);
   gulp.watch('images/*', ['images']);

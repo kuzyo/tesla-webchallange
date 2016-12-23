@@ -40,7 +40,7 @@
 
         display: none;
 
-        background-color: #eb7b00;
+        background-color: $mango-tango;
 
         @include respond-to(lg)
         {
